@@ -1,0 +1,427 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #220000;
+    color: white;
+    
+}
+ 
+img {
+	width: 200px;
+	height: 50px;
+  }
+
+  p {
+    direction: rtl; /* تحديد اتجاه النص من اليمين إلى اليسار */
+    text-align: justify; /* ضبط النص ليكون ممتدًا إلى نهاية السطر */
+    text-align-last: right; /* جعل السطر الأخير من الفقرة بمحاذاة لليمين */
+    unicode-bidi: plaintext; /* التأكد من أن النص العربي يظهر بشكل صحيح */
+}
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.project-name {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 3rem; 
+    margin-bottom: 20px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    background-color: #440000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.content {
+    padding: 50px 0;
+}
+
+.service-content {
+    display: none;
+    text-align: center;
+    color: white;
+}
+
+#service1.service-content,
+#service2.service-content,
+#service3.service-content,
+#service4.service-content {
+    display: block;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+/* خدمات */
+.glass-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.service-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: calc(50% - 40px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+#services {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.arabic-text {
+    text-align: justify;
+    direction: rtl;
+}
+
+/* عملائنا */
+.glass-container {
+    width: 80%;
+    max-width: 1200px; /* هذا سيحد من عرض الحاوية إلى 1200 بكسل كحد أقصى */
+    margin: 0 auto; /* يقوم بتوسيط الحاوية على الشاشة */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+/* Partner Item Styles */
+.partner-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.partner-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.partner-item .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.partner-item h3 {
+    font-size: 1.25rem;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.arabic-text {
+    text-align: justify;
+    direction: rtl;
+}
+
+ /*  من نحن! */
+
+.glass-box {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.1); /* لون خلفية زجاجية */
+    padding: 20px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin: 20px 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.glass-box .image.main {
+    margin-bottom: 30px; /* المسافة بين الصورة والنصوص */
+}
+
+p {
+    margin: 0 0 2rem 0;
+}
+
+.glass-box p {
+  
+    text-align: right; /* محاذاة النص لليمين في الفقرات */
+    margin: 0 0 2rem 0;
+                        /* إضافة بعض المسافات بين الفقرات */
+}
+
+.glass-box .image.main img {
+    width: 100%;
+    max-height: 300px; /* تعديل الارتفاع إذا لزم الأمر */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h2.major {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* يضع المحتوى في وسط النموذج عموديًا */
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin: 20px auto;
+    box-sizing: border-box;
+   
+}
+
+form {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.fields .field {
+    width: 100%;
+}
+
+.fields .field.half {
+    width: 48%;
+}
+
+/* التواصل*/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* يضع المحتوى في وسط النموذج عموديًا */
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+h2.major {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+form {
+    width: 100%; /* يضمن أن الحقول تأخذ عرض الخلفية بالكامل */
+    max-width: 1000px;
+}
+
+
+.fields .field {
+   
+    width: 100%;
+}
+
+.fields .field.half {
+  
+    width: 48%;
+}
+
+.fields {
+     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    box-sizing: border-box;
+    margin: 10px 10px auto;
+}
+
+.button-container {
+    text-align: center; /* محاذاة الأزرار لليمين */
+    margin-top: 1rem; /* المسافة بين الحقول والأزرار */
+}
+
+.field input, .field textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.actions li {
+    list-style: none;
+}
+
+.actions input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.actions input.primary {
+    background-color: #008CBA;
+    color: white;
+}
+
+.actions input:hover {
+    opacity: 0.9;
+}
+
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+}
+
+/* Stylish Buttons */
+input[type="submit"].primary,
+input[type="reset"] {
+    background-color: #dd4b39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"]:hover {
+    background-color: #c43a28;
+}
+
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+    .navbar ul {
+        text-align: left;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .fields .field.half {
+        width: 100%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .partner-item {
+        flex: 1 1 45%; /* Two items per row on medium screens */
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-item {
+        flex: 1 1 90%; /* One item per row on smaller screens */
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .partner-item {
+        flex: 1 1 100%; /* Full width on very small screens */
+        max-width: 100%;
+    }
+}
+.social {
+    display: flex;
+    justify-content: center; /* Optional: Centers the icons horizontally */
+  }
+  
+  .social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    margin: 0 5px; /* Adjust spacing as needed */
+  }
