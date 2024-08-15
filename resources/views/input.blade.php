@@ -9,6 +9,7 @@
 </head>
 <body>
     
+    
 <article id="contact" class="glass-effect">
             <h2 class="major">اترك لنا رسالتك</h2>
             <form method="post" action="/hj">
@@ -35,8 +36,6 @@
             
         </article> 
     
-
-
 
 
 </body> 
