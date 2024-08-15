@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>بانوراما القصيم للبرمجة والتصميم</title>
+    <title>بانوراما القصيم</title>
     <link rel="stylesheet" href="assets\css\main.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -326,30 +326,6 @@
 	
 	</div>
 
-
-
-<!--	<article id="contact">
-		<h2 class="major">اترك لنا رسالتك</h2>
-		<form method="post" action="#">
-			<div class="fields">
-				<div class="field half">
-					<label for="name">الاسم</label>
-					<input type="text" name="name" id="name" />
-				</div>
-				<div class="field half">
-					<label for="email">البريد الالكتروني</label>
-					<input type="text" name="email" id="email" />
-				</div>
-				<div class="field">
-					<label for="message">الرسالة</label>
-					<textarea name="message" id="message" rows="4"></textarea>
-				</div>
-			</div>
-			<ul class="actions">
-				<li><input type="submit" value="ارسال" class="primary" /></li>
-				<li><input type="reset" value="مسح" /></li>
-			</ul>
-		</form> -->
 
 
 		<a href="#main-page" class="back-to-home">
