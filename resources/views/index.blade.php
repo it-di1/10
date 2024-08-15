@@ -205,7 +205,7 @@
 		</article>
     
 		
-			<section id="services">
+		<!--	<section id="services">
 				<div class="glass-container">
 					<div class="service-item">
 						<h2 class="major">البرمجة من الصفر</h2>
@@ -285,7 +285,21 @@
 						</p>
 					</div>
 				</div>
-			</section>
+			</section> -->
+
+			<section id="services">
+            <div class="glass-container">
+                @foreach($services as $service)
+                    <div class="service-item">
+                        <h2 class="major">{{ $service->title }}</h2>
+                        <img src="{{ asset('images/' . $service->image) }}" alt="{{ $service->title }}">
+                        <p class="arabic-text">
+                            {{ $service->description }}
+                        </p>
+                    </div>
+                @endforeach
+            </div>
+        </section>
 			
 
 

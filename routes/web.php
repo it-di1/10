@@ -22,3 +22,9 @@ Route::post('/hj', [ContactController::class,'data']);
 Route::get('/input', function () {
     return view('input');
 });
+
+//
+
+Route::resource('services', ServiceController::class);
+
+//Route::post('/services', [ServiceController::class, 'store'])->name('services.store');
