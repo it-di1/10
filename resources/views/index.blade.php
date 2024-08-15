@@ -313,7 +313,7 @@
 					<li><input type="submit" value="ارسال" class="primary" /></li>
 					<li><input type="reset" value="مسح" /></li>
 				</ul>
-			</form> -->
+			</form> 
 			<div class="social">
 				<a href="https://x.com/Panorama_Q" target="_blank"><i class='bx bxl-twitter'></i></a>
 			    <a href="https://facebook.com/palqassim" target="_blank"><i class='bx bxl-facebook-square' ></i></a>
@@ -322,7 +322,7 @@
 				<a href="https://tiktok.com/@panorama_alqassim" target="_blank"><i class='bx bxl-tiktok'></i> </a>
 				<a href="https://instagram.com/palqassim/" target="_blank"> <i class='bx bxl-instagram'></i></a>
 			</div>
-		</article>
+		</article> -->
 	
 	</div>
 
