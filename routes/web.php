@@ -16,5 +16,4 @@ Route::get('/data', function () {
     return view('input');
 });
 
-
 Route::post('/hj', [ContactController::class,'data']);
