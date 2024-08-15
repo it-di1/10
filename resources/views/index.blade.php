@@ -294,7 +294,7 @@
 	
 		<article id="contact" class="glass-effect">
 			<h2 class="major">اترك لنا رسالتك</h2>
-			<form method="post" action="#">
+			<form method="post" action="/hj">
 				<div class="fields">
 					<div class="field half">
 						<label for="name">الاسم</label>
