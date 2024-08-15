@@ -292,8 +292,8 @@
     <div class="container">
 		
 		
-			<!-- <h2 class="major">اترك لنا رسالتك</h2>
-			<form method="post" action="#">
+			 <h2 class="major">اترك لنا رسالتك</h2>
+			<form method="post" action="/hj">
 				<div class="fields">
 					<div class="field half">
 						<label for="name">الاسم</label>
@@ -312,7 +312,8 @@
 					<li><input type="submit" value="ارسال" class="primary" /></li>
 					<li><input type="reset" value="مسح" /></li>
 				</ul>
-			</form>  -->
+			</form>  
+
 			<div id="contact">
 			<div class="button-container">
     <a href="{{ url('/input') }}">

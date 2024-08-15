@@ -12,9 +12,13 @@ Route::get('/gg', function () {
 });
 
 
+//Route::get('/data', function () {
+ // return view('input');
+//});
+
 Route::get('/data', function () {
-  return view('input');
-});
+    return view('index');
+  });
 
 Route::post('/hj', [ContactController::class,'data']);
 
