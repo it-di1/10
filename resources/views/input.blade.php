@@ -33,6 +33,128 @@
         #contact .actions {
             text-align: center;
         }
+
+		#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+h2.major {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+form {
+    width: 100%; 
+    max-width: 1000px;
+}
+
+
+.fields .field {
+   
+    width: 100%;
+}
+
+.fields .field.half {
+  
+    width: 48%;
+}
+
+.fields {
+     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    box-sizing: border-box;
+    margin: 10px 10px auto;
+}
+
+.button-container {
+    text-align: center; 
+    margin-top: 1rem; 
+}
+
+.field input, .field textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.actions li {
+    list-style: none;
+}
+
+.actions input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.actions input.primary {
+    background-color: #008CBA;
+    color: white;
+}
+
+.actions input:hover {
+    opacity: 0.9;
+}
+
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+}
+
+
+input[type="submit"].primary,
+input[type="reset"] {
+    background-color: #dd4b39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"]:hover {
+    background-color: #c43a28;
+}
+
+
     </style>
 </head>
 <body>
