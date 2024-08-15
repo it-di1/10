@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #220000;
+    background-color: #221c00;
     color: white;
     
 }
@@ -14,10 +14,10 @@ img {
   }
 
   p {
-    direction: rtl; /* تحديد اتجاه النص من اليمين إلى اليسار */
-    text-align: justify; /* ضبط النص ليكون ممتدًا إلى نهاية السطر */
-    text-align-last: right; /* جعل السطر الأخير من الفقرة بمحاذاة لليمين */
-    unicode-bidi: plaintext; /* التأكد من أن النص العربي يظهر بشكل صحيح */
+    direction: rtl; 
+    text-align: justify; 
+    text-align-last: right; 
+    unicode-bidi: plaintext; 
 }
 .container {
     max-width: 1200px; 
@@ -121,8 +121,8 @@ img {
 /* عملائنا */
 .glass-container {
     width: 80%;
-    max-width: 1200px; /* هذا سيحد من عرض الحاوية إلى 1200 بكسل كحد أقصى */
-    margin: 0 auto; /* يقوم بتوسيط الحاوية على الشاشة */
+    max-width: 1200px; 
+    margin: 0 auto; 
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -133,7 +133,7 @@ img {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
-/* Partner Item Styles */
+
 .partner-item {
     flex: 1 1 300px;
     max-width: 300px;
@@ -172,7 +172,7 @@ img {
 
 .glass-box {
     width: 80%;
-    background: rgba(255, 255, 255, 0.1); /* لون خلفية زجاجية */
+    background: rgba(255, 255, 255, 0.1); 
     padding: 20px 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -183,7 +183,7 @@ img {
 }
 
 .glass-box .image.main {
-    margin-bottom: 30px; /* المسافة بين الصورة والنصوص */
+    margin-bottom: 30px; 
 }
 
 p {
@@ -192,14 +192,14 @@ p {
 
 .glass-box p {
   
-    text-align: right; /* محاذاة النص لليمين في الفقرات */
+    text-align: right; 
     margin: 0 0 2rem 0;
-                        /* إضافة بعض المسافات بين الفقرات */
+                        
 }
 
 .glass-box .image.main img {
     width: 100%;
-    max-height: 300px; /* تعديل الارتفاع إذا لزم الأمر */
+    max-height: 300px; 
     object-fit: cover;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -214,7 +214,7 @@ h2.major {
 #about {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* يضع المحتوى في وسط النموذج عموديًا */
+    justify-content: center; 
     align-items: center;
     width: 90%;
     max-width: 1200px;
@@ -253,7 +253,7 @@ form {
 #contact {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* يضع المحتوى في وسط النموذج عموديًا */
+    justify-content: center; 
     align-items: center;
     width: 90%;
     max-width: 1200px;
@@ -274,7 +274,7 @@ h2.major {
 }
 
 form {
-    width: 100%; /* يضمن أن الحقول تأخذ عرض الخلفية بالكامل */
+    width: 100%; 
     max-width: 1000px;
 }
 
@@ -300,8 +300,8 @@ form {
 }
 
 .button-container {
-    text-align: center; /* محاذاة الأزرار لليمين */
-    margin-top: 1rem; /* المسافة بين الحقول والأزرار */
+    text-align: center; 
+    margin-top: 1rem; 
 }
 
 .field input, .field textarea {
@@ -352,7 +352,7 @@ form {
     text-align: center;
 }
 
-/* Stylish Buttons */
+
 input[type="submit"].primary,
 input[type="reset"] {
     background-color: #dd4b39;
@@ -371,7 +371,6 @@ input[type="reset"]:hover {
 }
 
 
-/* Media query for smaller screens */
 
 @media (max-width: 768px) {
     .navbar ul {
@@ -388,30 +387,30 @@ input[type="reset"]:hover {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .partner-item {
-        flex: 1 1 45%; /* Two items per row on medium screens */
+        flex: 1 1 45%; 
         max-width: 45%;
     }
 }
 
 @media (max-width: 768px) {
     .partner-item {
-        flex: 1 1 90%; /* One item per row on smaller screens */
+        flex: 1 1 90%; 
         max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .partner-item {
-        flex: 1 1 100%; /* Full width on very small screens */
+        flex: 1 1 100%; 
         max-width: 100%;
     }
 }
 .social {
     display: flex;
-    justify-content: center; /* Optional: Centers the icons horizontally */
+    justify-content: center; 
   }
   
   .social a {
@@ -423,5 +422,6 @@ input[type="reset"]:hover {
     border-radius: 50%;
     color: white;
     border: 2px solid white;
-    margin: 0 5px; /* Adjust spacing as needed */
+    margin: 0 5px; 
   }
+  
