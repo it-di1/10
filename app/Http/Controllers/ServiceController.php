@@ -46,6 +46,7 @@ class ServiceController extends Controller
         $service->save();
 
         // إعادة التوجيه إلى صفحة عرض الخدمات مع رسالة نجاح
+       
         return redirect()->route('services.index')->with('success', 'تم إضافة الخدمة بنجاح');
     }
 }
