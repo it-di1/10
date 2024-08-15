@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 
-Route::get('/data', function () {
+Route::get('/', function () {
    return view('index');
 });
 
