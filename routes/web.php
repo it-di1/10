@@ -12,9 +12,9 @@ Route::get('/gg', function () {
 });
 
 
-//Route::get('/data', function () {
- // return view('input');
-//});
+Route::get('/data', function () {
+  return view('input');
+});
 
  Route::post('/hj', [ContactController::class,'data']);
 
