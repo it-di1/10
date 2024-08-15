@@ -39,7 +39,7 @@ class ServiceController extends Controller
 
         // حفظ الصورة في مجلد 'images' إذا كانت موجودة
         if ($request->hasFile('Picture')) {
-            $service->Picture = $request->file('Picture')->store('images');
+            $service->Picture = $request->file('Picture')->store('logo');
         }
 
         // حفظ الخدمة في قاعدة البيانات

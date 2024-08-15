@@ -297,7 +297,7 @@
             @foreach($services as $service)
                 <div class="service-item">
                     <h2 class="major">{{ $service->Title }}</h2> <!-- تأكد من أن 'Title' هو الاسم الصحيح -->
-                    <img src="{{ asset('images/' . $service->Picture) }}" alt="{{ $service->Title }}"> <!-- تأكد من أن 'Picture' هو الاسم الصحيح -->
+                    <img src="{{ asset('logo/' . $service->Picture) }}" alt="{{ $service->Title }}"> <!-- تأكد من أن 'Picture' هو الاسم الصحيح -->
                     <p class="arabic-text">
                         {{ $service->Description }} <!-- تأكد من أن 'Description' هو الاسم الصحيح -->
                     </p>
