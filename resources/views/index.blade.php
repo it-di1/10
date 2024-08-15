@@ -332,6 +332,11 @@
 			<img src="images/webpagehome_85808.ico" alt="Home">
 		</a>
 	</article>
+
+
+    <a href="{{ url('/input') }}">
+        <button>اذهب إلى ملف PHP</button>
+    </a>
 	
 	<style>
 		.back-to-home {
