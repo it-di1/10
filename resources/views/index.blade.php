@@ -291,7 +291,7 @@
 
     <div class="container">
 		
-	<!--
+	
 		<article id="contact" class="glass-effect">
 			<h2 class="major">اترك لنا رسالتك</h2>
 			<form method="post" action="#">
@@ -322,7 +322,7 @@
 				<a href="https://tiktok.com/@panorama_alqassim" target="_blank"><i class='bx bxl-tiktok'></i> </a>
 				<a href="https://instagram.com/palqassim/" target="_blank"> <i class='bx bxl-instagram'></i></a>
 			</div>
-		</article> -->
+		</article> 
 	
 	</div>
 

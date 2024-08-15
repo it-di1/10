@@ -4,17 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\contact;
+
 class ContactController extends Controller
 {
-    public function data (){
+    public function data (Request $request){
+
+         //  dd($request->name);
 
         $lap = contact::create ([
-            'Name' => '',
-            'Email' => '',
-            'message' => '',
+            'Name' => $request->name,
+            'Email' => $request->email,
+            'message' => $request->message,
 
         ]);
 
         $lap->save();
+
+        return redirect('/gg');
     }
 }
