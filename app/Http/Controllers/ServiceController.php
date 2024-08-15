@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class ServiceController extends Controller
 {
+
+    public function create()
+    {
+        return view('services.create');
+    }
     // دالة عرض جميع الخدمات
     public function index()
     {

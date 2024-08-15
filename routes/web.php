@@ -30,3 +30,9 @@ Route::get('/', [ServiceController::class, 'index']);
 //Route::resource('services', ServiceController::class);
 
 //Route::post('/services', [ServiceController::class, 'store'])->name('services.store');
+
+// يعرض نموذج إدخال البيانات
+Route::get('services/create', [ServiceController::class, 'create'])->name('services.create');
+
+// يعالج بيانات النموذج عند تقديمه
+Route::post('services', [ServiceController::class, 'store'])->name('services.store');
