@@ -291,10 +291,9 @@
 
     <div class="container">
 		
-	
-		<article id="contact" class="glass-effect">
-			<h2 class="major">اترك لنا رسالتك</h2>
-			<form method="post" action="/hj">
+		
+			<!-- <h2 class="major">اترك لنا رسالتك</h2>
+			<form method="post" action="#">
 				<div class="fields">
 					<div class="field half">
 						<label for="name">الاسم</label>
@@ -313,7 +312,13 @@
 					<li><input type="submit" value="ارسال" class="primary" /></li>
 					<li><input type="reset" value="مسح" /></li>
 				</ul>
-			</form> 
+			</form>  -->
+			<div id="contact">
+			<div class="button-container">
+    <a href="{{ url('/input') }}">
+        <button>للتواصل اضغط هنا</button>
+    </a>
+</div>
 			<div class="social">
 				<a href="https://x.com/Panorama_Q" target="_blank"><i class='bx bxl-twitter'></i></a>
 			    <a href="https://facebook.com/palqassim" target="_blank"><i class='bx bxl-facebook-square' ></i></a>
@@ -326,7 +331,7 @@
 	
 	</div>
 
-
+</div>
 
 		
 	</article>
@@ -360,6 +365,22 @@
 			background: rgba(255, 165, 0, 0.6);
 			transform: scale(1.1);
 		}
+		.button-container {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+  }
+
+  button {
+      font-size: 24px;
+      padding: 15px 30px;
+      background-color:white;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+  }
 	</style>
 
 
