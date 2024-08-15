@@ -287,19 +287,24 @@
 				</div>
 			</section> -->
 
-			<section id="services">
-            <div class="glass-container">
-                @foreach($services as $service)
-                    <div class="service-item">
-                        <h2 class="major">{{ $service->title }}</h2>
-                        <img src="{{ asset('images/' . $service->image) }}" alt="{{ $service->title }}">
-                        <p class="arabic-text">
-                            {{ $service->description }}
-                        </p>
-                    </div>
-                @endforeach
-            </div>
-        </section>
+			<style>
+        /* أضف أي أنماط CSS هنا */
+    </style>
+</head>
+<body>
+    <section id="services">
+        <div class="glass-container">
+            @foreach($services as $service)
+                <div class="service-item">
+                    <h2 class="major">{{ $service->Title }}</h2> <!-- تأكد من أن 'Title' هو الاسم الصحيح -->
+                    <img src="{{ asset('public/images' . $service->Picture) }}" alt="{{ $service->Title }}"> <!-- تأكد من أن 'Picture' هو الاسم الصحيح -->
+                    <p class="arabic-text">
+                        {{ $service->Description }} <!-- تأكد من أن 'Description' هو الاسم الصحيح -->
+                    </p>
+                </div>
+            @endforeach
+        </div>
+    </section>
 			
 
 

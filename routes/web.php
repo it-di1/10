@@ -26,7 +26,7 @@ Route::get('/input', function () {
 });
 
 //
-
-Route::resource('services', ServiceController::class);
+Route::get('/', [ServiceController::class, 'index']);
+//Route::resource('services', ServiceController::class);
 
 //Route::post('/services', [ServiceController::class, 'store'])->name('services.store');
