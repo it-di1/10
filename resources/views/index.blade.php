@@ -210,7 +210,7 @@
     <div>
         <h2>{{ $customer->Title }}</h2>
         <p>{{ $customer->Description }}</p>
-        <img src="{{ asset('customer/' . $customer->Picture) }}" alt="{{ $customer->Title }}">
+        <img src="{{ asset('logo/' . $customer->Picture) }}" alt="{{ $customer->Title }}">
     </div>
 @endforeach
         </div>

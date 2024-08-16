@@ -34,8 +34,8 @@ class CustomerController extends Controller
         $customer->Description = $request->Description;
 
         if ($request->hasFile('Picture')) {
-            $image = 'customer_' . uniqid() . '.' . $request->Picture->getClientOriginalExtension();
-            $request->Picture->move(public_path('customer'), $image);
+            $image = 'logo_' . uniqid() . '.' . $request->Picture->getClientOriginalExtension();
+            $request->Picture->move(public_path('logo'), $image);
             $customer->Picture = $image;
         }
 
@@ -65,12 +65,12 @@ class CustomerController extends Controller
         $customer->Description = $request->Description;
 
         if ($request->hasFile('Picture')) {
-            if (file_exists(public_path('customer/' . $customer->Picture))) {
-                unlink(public_path('customer/' . $customer->Picture));
+            if (file_exists(public_path('logo/' . $customer->Picture))) {
+                unlink(public_path('logo/' . $customer->Picture));
             }
 
-            $image = 'customer_' . uniqid() . '.' . $request->Picture->getClientOriginalExtension();
-            $request->Picture->move(public_path('customer'), $image);
+            $image = 'logo_' . uniqid() . '.' . $request->Picture->getClientOriginalExtension();
+            $request->Picture->move(public_path('logo'), $image);
             $customer->Picture = $image;
         }
 
@@ -84,8 +84,8 @@ class CustomerController extends Controller
     {
         $customer = Customer::findOrFail($id);
 
-        if (file_exists(public_path('customer/' . $customer->Picture))) {
-            unlink(public_path('customer/' . $customer->Picture));
+        if (file_exists(public_path('logo/' . $customer->Picture))) {
+            unlink(public_path('logo/' . $customer->Picture));
         }
 
         $customer->delete();
