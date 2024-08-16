@@ -372,7 +372,7 @@
 	</article>
 
 	<a href="#main-page" class="back-to-home">
-            <img src="images/home-icon.png" alt="Home">
+            <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Home">
         </a>
     
 	<style>
