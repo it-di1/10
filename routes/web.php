@@ -48,3 +48,9 @@ Route::get('services/create', [ServiceController::class, 'create'])->name('servi
 Route::post('services', [ServiceController::class, 'store'])->name('services.store');
 
 
+Route::get('/customers/view', [CustomerController::class, 'view']);
+Route::resource('customers', CustomerController::class);
+
+// Create and store routes for customers
+Route::get('customers/create', [CustomerController::class, 'create'])->name('customers.create');
+Route::post('customers', [CustomerController::class, 'store'])->name('customers.store');

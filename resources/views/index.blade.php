@@ -43,7 +43,7 @@
         
 		<article id="work">
 			<h2 class="major"> عملائنا</h2>
-			<div class="glass-container">
+		<!--	<div class="glass-container">
 
 				<div class="partner-item">
 				<span class="image main"><img src="images/pic02_3.jpg" alt="مستشفى بريدة المركزي"/></span>
@@ -203,7 +203,26 @@
 				اخذ أموال الناس بالباطل المكتب معروف لدى الجميع ومنهم الجهات المختصه .
 			</p><br>
 		</div>
-   </div>
+   </div> -->
+
+   <div class="glass-container">
+            @foreach($customers as $customer)
+                <div class=" partner-item">
+                    <h2 class="major">{{ $customer->Title }}</h2> <!-- تأكد من أن 'Title' هو الاسم الصحيح -->
+                    <img src="{{ asset('logo/' . $customer->Picture) }}" alt="{{ $customer->Title }}"> <!-- تأكد من أن 'Picture' هو الاسم الصحيح -->
+                    <p class="arabic-text">
+                        {{ $customer->Description }} <!-- تأكد من أن 'Description' هو الاسم الصحيح -->
+                    </p>
+
+					
+                 <!--   <a href="{{ route('services.edit', $service->id) }}" class="btn btn-warning">تعديل</a> -->
+                
+
+                </div>
+            @endforeach
+        </div>
+        
+
 		</article>
     
 		
