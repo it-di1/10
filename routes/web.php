@@ -18,6 +18,12 @@ Route::get('/data', function () {
   return view('input');
 });
 
+//جديد
+Route::get('/services/view', function () {
+   return view('services.view');
+ });
+
+
 
 Route::post('/hj', [ContactController::class,'data']);
 

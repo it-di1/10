@@ -20,7 +20,12 @@ class ServiceController extends Controller
         $services = Service::all();
        return view('index', compact('services'));
     }
-   
+   //جديد
+    public function view(){
+
+        $services = Service::all();
+
+    }
     
     public function store(Request $request)
     {
