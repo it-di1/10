@@ -25,13 +25,6 @@
 </head>
 <body>
 
-
-       
-       
-    
-
-		
-        
 		<article id="about">
 			<div class="glass-box">
 				<h2 class="major">من نحن</h2>
