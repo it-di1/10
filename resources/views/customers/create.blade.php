@@ -23,7 +23,7 @@
 <div class="container">
     <div class="form-container">
         <h2>إنشاء خدمة جديدة</h2>
-        <form action="{{ route('customer.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('customers.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
                 <label for="title" class="form-label">عنوان الخدمة</label>
