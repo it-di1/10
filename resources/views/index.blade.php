@@ -86,10 +86,7 @@
     </a>
        
 	<a href="{{ url('/input') }}" class="contact-button">
-        <button>
             <img src="path/to/your/image.png" alt="Contact" />
-        
-        </button>
     </a>
 		
         
