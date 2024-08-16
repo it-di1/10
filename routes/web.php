@@ -19,11 +19,11 @@ Route::get('/data', function () {
 });
 
 //جديد
-Route::get('/services/view', function () {
-   return view('services.view');
- });
+//Route::get('/services/view', function () {
+ //  return view('services.view');
+ //});
 
- //Route::get('/services/view', [ServiceController::class, 'view']);
+ Route::get('/services/view', [ServiceController::class, 'view']);
 
 
 
