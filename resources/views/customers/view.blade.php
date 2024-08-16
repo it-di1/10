@@ -19,8 +19,8 @@
                     </p>
 
 					
-                    <a href="{{ route('customers.edit', $service->id) }}" class="btn btn-warning">تعديل</a>
-                
+                    
+                    <a href="{{ route('customers.edit', $customer->id) }}" class="btn btn-warning">تعديل</a>
 
                 </div>
             @endforeach
