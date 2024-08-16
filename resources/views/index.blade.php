@@ -348,13 +348,12 @@
 			</form>  -->
 
 			<div id="contact">
-			
-</div> 
-<div class="button-container">
+			<div class="button-container">
     <a href="{{ url('/input') }}">
         <button>للتواصل اضغط هنا</button>
     </a>
 </div> 
+        
 			<div class="social">
 				<a href="https://x.com/Panorama_Q" target="_blank"><i class='bx bxl-twitter'></i></a>
 			    <a href="https://facebook.com/palqassim" target="_blank"><i class='bx bxl-facebook-square' ></i></a>
