@@ -22,14 +22,75 @@
         </nav>
 </div>
 
+</head>
+<body>
+<style>
+        /* Existing styles */
+        
+        .contact-button {
+            position: fixed;
+            top: 20px;
+            right: 100px;
+            z-index: 1000;
+        }
+
+        .contact-button button {
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-button img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 165, 0, 0.3); 
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease, transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-home img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .back-to-home:hover {
+            background: rgba(255, 165, 0, 0.6);
+            transform: scale(1.1);
+        }
+    </style>
    <!-- Fixed circular buttons -->
    <a href="#main-page" class="back-to-home">
         <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Home">
     </a>
        
 	<a href="{{ url('/input') }}" class="contact-button">
-            <button>للتواصل اضغط هنا</button>
-        </a>
+        <button>
+            <img src="path/to/your/image.png" alt="Contact" />
+        
+        </button>
+    </a>
 		
         
 		<article id="about">
