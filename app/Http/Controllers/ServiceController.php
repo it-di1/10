@@ -15,10 +15,15 @@ class ServiceController extends Controller
     }
     
    
+    //public function index()
+    //{
+      //  $services = Service::all();
+       // return view('index', compact('services'));
+    //}
     public function index()
     {
-        $services = Service::all();
-        return view('index', compact('services'));
+        $services = Service::all(); // جلب جميع الخدمات
+        return view('services.index', compact('services')); // عرض البيانات في صفحة index
     }
     //
     //public function showServices() {
