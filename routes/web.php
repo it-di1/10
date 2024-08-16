@@ -38,3 +38,6 @@ Route::get('services/create', [ServiceController::class, 'create'])->name('servi
 
 // يعالج بيانات النموذج عند تقديمه
 Route::post('services', [ServiceController::class, 'store'])->name('services.store');
+
+//
+Route::get('/view-services', [ServiceController::class, 'showServices'])->name('view.services');

@@ -20,6 +20,11 @@ class ServiceController extends Controller
         $services = Service::all();
         return view('index', compact('services'));
     }
+    //
+    public function showServices() {
+        $services = Service::all(); // Fetch all services
+        return view('view', compact('services')); // Pass the data to the 'view' page
+    }
 
     
     public function store(Request $request)
