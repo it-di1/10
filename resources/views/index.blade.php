@@ -418,6 +418,29 @@
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       cursor: pointer;
   }
+  .button-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contact-button button {
+    font-size: 24px;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.4);
+    color: #333; 
+    border: 2px solid rgba(255, 255, 255, 0.6); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    backdrop-filter: blur(10px); 
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button button:hover {
+    background: rgba(255, 255, 255, 0.6); 
+    transform: scale(1.05);
+}
 	</style>
 
 
