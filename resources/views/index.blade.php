@@ -22,7 +22,9 @@
         </nav>
 </div>
 
-		
+</head>
+<body>
+
 		<article id="about">
 			<div class="glass-box">
 				<h2 class="major">من نحن</h2>
@@ -205,7 +207,7 @@
 		</article>
     
 		
-			<section id="services">
+		<!--	<section id="services">
 				<div class="glass-container">
 					<div class="service-item">
 						<h2 class="major">البرمجة من الصفر</h2>
@@ -285,7 +287,31 @@
 						</p>
 					</div>
 				</div>
-			</section>
+			</section> -->
+
+			<style>
+        /* أضف أي أنماط CSS هنا */
+    </style>
+</head>
+<body>
+    <section id="services">
+        <div class="glass-container">
+            @foreach($services as $service)
+                <div class="service-item">
+                    <h2 class="major">{{ $service->Title }}</h2> <!-- تأكد من أن 'Title' هو الاسم الصحيح -->
+                    <img src="{{ asset('logo/' . $service->Picture) }}" alt="{{ $service->Title }}"> <!-- تأكد من أن 'Picture' هو الاسم الصحيح -->
+                    <p class="arabic-text">
+                        {{ $service->Description }} <!-- تأكد من أن 'Description' هو الاسم الصحيح -->
+                    </p>
+
+					
+                 <!--   <a href="{{ route('services.edit', $service->id) }}" class="btn btn-warning">تعديل</a> -->
+                
+
+                </div>
+            @endforeach
+        </div>
+    </section>
 			
 
 
@@ -293,7 +319,7 @@
 		
 		
 			<!-- <h2 class="major">اترك لنا رسالتك</h2>
-			<form method="post" action="#">
+			<form method="post" action="/hj">
 				<div class="fields">
 					<div class="field half">
 						<label for="name">الاسم</label>
@@ -313,12 +339,48 @@
 					<li><input type="reset" value="مسح" /></li>
 				</ul>
 			</form>  -->
+
 			<div id="contact">
 			<div class="button-container">
     <a href="{{ url('/input') }}">
         <button>للتواصل اضغط هنا</button>
     </a>
-</div>
+</div> 
+        <style>
+
+.button-container {
+    text-align: center;
+    margin: 40px auto; /* التحكم في المسافة فوق وتحت المربع */
+    padding: 20px; /* إضافة مساحة داخلية للمربع */
+    background-color: #fff4e6; /* لون خلفية للمربع (برتقالي فاتح) */
+    border-radius: 12px; /* تدوير زوايا المربع */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+    max-width: 300px; /* تحديد أقصى عرض للمربع */
+}
+
+.button-container a {
+    text-decoration: none; /* إزالة التحديد من الرابط */
+}
+
+.button-container button {
+    font-size: 16px; /* حجم الخط في الزر */
+    padding: 12px 25px; /* حجم الحشو داخل الزر */
+    background-color: #ffa500; /* لون خلفية الزر (برتقالي) */
+    color: white; /* لون النص داخل الزر */
+    border: none; /* إزالة الحدود */
+    border-radius: 8px; /* تدوير زوايا الزر */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* ظل الزر */
+    cursor: pointer; /* تغيير المؤشر عند المرور فوق الزر */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* تأثير الانتقال */
+}
+
+.button-container button:hover {
+    background-color: #ff8c00; /* لون الزر عند المرور بالماوس (برتقالي داكن) */
+    transform: scale(1.05); /* تكبير الزر عند المرور بالماوس */
+}
+
+
+		</style>
 			<div class="social">
 				<a href="https://x.com/Panorama_Q" target="_blank"><i class='bx bxl-twitter'></i></a>
 			    <a href="https://facebook.com/palqassim" target="_blank"><i class='bx bxl-facebook-square' ></i></a>
@@ -333,11 +395,13 @@
 
 </div>
 
-		<a href="#main-page" class="back-to-home">
-			<img src="images/webpagehome_85808.ico" alt="Home">
-		</a>
+		
 	</article>
-	
+
+	<a href="#main-page" class="back-to-home">
+            <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Home">
+        </a>
+    
 	<style>
 		.back-to-home {
 			position: fixed;
@@ -365,22 +429,11 @@
 			background: rgba(255, 165, 0, 0.6);
 			transform: scale(1.1);
 		}
-		.button-container {
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 30px;
-  }
+		
+ 
 
-  button {
-      font-size: 24px;
-      padding: 15px 30px;
-      background-color:white;
-      color: black;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-  }
+
+
 	</style>
 
 
