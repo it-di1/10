@@ -208,7 +208,7 @@
    <div class="glass-container">
         @foreach($customers as $customer)
             <div class="partner-item">
-                <span class="image main"><img src="{{ asset('images/' . $customer->Picture) }}" alt="{{ $customer->Title }}" /></span>
+                <span class="image main"><img src="{{ asset('logo/' . $customer->Picture) }}" alt="{{ $customer->Title }}" /></span>
                 <h3>{{ $customer->Title }}</h3>
                 <p class="arabic-text">
                     {{ $customer->Description }}
