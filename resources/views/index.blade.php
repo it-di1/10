@@ -25,7 +25,7 @@
         .button-container {
 			position: fixed;
             top: 0px; /* يمكنك تعديل المسافة من الأعلى حسب الحاجة */
-            right: 0px; /* تحديد المسافة من يمين الصفحة */
+            right: 5px; /* تحديد المسافة من يمين الصفحة */
             display: flex;
             flex-direction: column; /* ترتيب العناصر عموديًا */
             gap: 10px; /* المسافة بين الأزرار */
