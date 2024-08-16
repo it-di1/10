@@ -31,7 +31,7 @@
     </a>
        
 	<a href="{{ url('/input') }}" class="back-to-homen">
-            <img src="path/to/your/image.png" alt="Contact" />
+            <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Contact" />
     </a>
 		
         
