@@ -371,7 +371,9 @@
 		
 	</article>
 
-
+	<a href="#main-page" class="back-to-home">
+            <img src="images/home-icon.png" alt="Home">
+        </a>
     
 	<style>
 		.back-to-home {
