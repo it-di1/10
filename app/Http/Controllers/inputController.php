@@ -8,3 +8,4 @@ class input extends Controller
 {
     //
 }
+

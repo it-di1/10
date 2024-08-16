@@ -301,6 +301,11 @@
                     <p class="arabic-text">
                         {{ $service->Description }} <!-- تأكد من أن 'Description' هو الاسم الصحيح -->
                     </p>
+
+					@if(Auth::check() && Auth::user()->role == 'admin')
+                    <a href="{{ route('services.edit', $service->id) }}" class="btn btn-warning">تعديل</a>
+                @endif
+
                 </div>
             @endforeach
         </div>
