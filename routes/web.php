@@ -23,6 +23,8 @@ Route::get('/services/view', function () {
    return view('services.view');
  });
 
+ //Route::get('/services/view', [ServiceController::class, 'view']);
+
 
 
 Route::post('/hj', [ContactController::class,'data']);
