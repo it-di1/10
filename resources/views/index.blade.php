@@ -24,14 +24,12 @@
 <style>
         .button-container {
 			position: fixed;
-            top: 0px; /* يمكنك تعديل المسافة من الأعلى حسب الحاجة */
-            right: 10px; /* تحديد المسافة من يمين الصفحة */
-            display: flex;
-            flex-direction: column; /* ترتيب العناصر عموديًا */
-            gap: 10px; /* المسافة بين الأزرار */
+            top: 0px; 
+            right: 10px; 
+            gap: 10px; 
             z-index: 1000;
-			margin: 0px;
-            padding: 0; /* إزالة أي حشو افتراضي */
+			margin: 0;
+            padding: 0; 
         }
 
         .button-container a {
