@@ -305,7 +305,7 @@
                     </p>
 
 					
-                    <a href="{{ route('services.edit', $service->id) }}" class="btn btn-warning">تعديل</a>
+                 <!--   <a href="{{ route('services.edit', $service->id) }}" class="btn btn-warning">تعديل</a> -->
                 
 
                 </div>
