@@ -26,9 +26,7 @@
    <a href="#main-page" class="back-to-home">
         <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Home">
     </a>
-        <a href="{{ url('/input') }}" class="contact-button">
-            <img src="images/contact-icon.png" alt="Contact">
-        </a>
+       
  
 		
         
