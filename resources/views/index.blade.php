@@ -85,7 +85,7 @@
         <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Home">
     </a>
        
-	<a href="{{ url('/input') }}" class="contact-button">
+	<a href="{{ url('/input') }}" class="back-to-homen">
             <img src="path/to/your/image.png" alt="Contact" />
     </a>
 		
