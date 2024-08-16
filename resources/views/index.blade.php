@@ -23,13 +23,14 @@
 </div>
 <style>
         .button-container {
-        
-            position: fixed;
-            bottom: 20px; /* تحديد المسافة من أسفل الصفحة */
+			position: fixed;
+            top: 0; /* إزالة المسافة من الأعلى */
             right: 20px; /* تحديد المسافة من يمين الصفحة */
             display: flex;
             gap: 10px; /* المسافة بين الأزرار */
             z-index: 1000;
+            margin: 0; /* إزالة أي مسافة افتراضية */
+            padding: 0; /* إزالة أي حشو افتراضي */
         }
 
         .button-container a {
