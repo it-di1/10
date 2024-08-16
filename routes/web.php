@@ -27,6 +27,7 @@ Route::get('/input', function () {
 
 //
 Route::get('/', [ServiceController::class, 'index']);
+Route::get('/', [ServiceController::class, 'view']);
 
 Route::resource('services', ServiceController::class);
 
