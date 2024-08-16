@@ -206,15 +206,16 @@
    </div> -->
 
    <div class="glass-container">
-   @foreach($customers as $customer)
-    <div>
-        <h2>{{ $customer->Title }}</h2>
-        <p>{{ $customer->Description }}</p>
-        <img src="{{ asset('logo/' . $customer->Picture) }}" alt="{{ $customer->Title }}">
+        @foreach($customers as $customer)
+            <div class="partner-item">
+                <span class="image main"><img src="{{ asset('images/' . $customer->Picture) }}" alt="{{ $customer->Title }}" /></span>
+                <h3>{{ $customer->Title }}</h3>
+                <p class="arabic-text">
+                    {{ $customer->Description }}
+                </p>
+            </div>
+        @endforeach
     </div>
-@endforeach
-        </div>
-        
 
 		</article>
     
