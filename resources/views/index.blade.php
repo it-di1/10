@@ -30,67 +30,8 @@
             <img src="images/contact-icon.png" alt="Contact">
         </a>
  
-		<style>
-        /* أضف أي أنماط CSS هنا */
-        .back-to-home, .contact-button {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            background: rgba(255, 165, 0, 0.3); 
-            backdrop-filter: blur(10px);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background 0.3s ease, transform 0.3s ease;
-            z-index: 1000;
-        }
-
-        .back-to-home {
-            top: 20px;
-            right: 100px;
-            background: rgba(255, 165, 0, 0.3);
-        }
-
-        .contact-button {
-            top: 20px;
-            right: 20px;
-            background: rgba(0, 150, 136, 0.3); 
-        }
-
-        .back-to-home img, .contact-button img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .back-to-home:hover, .contact-button:hover {
-            background: rgba(255, 165, 0, 0.6);
-            transform: scale(1.1);
-        }
-
-        .contact-button:hover {
-            background: rgba(0, 150, 136, 0.6); 
-        }
-
-        .button-container {
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 30px;
-        }
-
-        button {
-            font-size: 24px;
-            padding: 15px 30px;
-            background-color: white;
-            color: black;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-        }
-    </style>
 		
+        
 		<article id="about">
 			<div class="glass-box">
 				<h2 class="major">من نحن</h2>
