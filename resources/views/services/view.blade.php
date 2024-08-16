@@ -7,7 +7,9 @@
     </head>
 <body>
 
-@foreach($services as $service)
+<section id="services">
+        <div class="glass-container">
+            @foreach($services as $service)
                 <div class="service-item">
                     <h2 class="major">{{ $service->Title }}</h2> <!-- تأكد من أن 'Title' هو الاسم الصحيح -->
                     <img src="{{ asset('logo/' . $service->Picture) }}" alt="{{ $service->Title }}"> <!-- تأكد من أن 'Picture' هو الاسم الصحيح -->
@@ -21,6 +23,7 @@
 
                 </div>
             @endforeach
-
+        </div>
+    </section>
 </body>
 </html>
