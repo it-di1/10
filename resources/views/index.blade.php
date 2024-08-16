@@ -352,6 +352,7 @@
     <a href="{{ url('/input') }}">
         <button>للتواصل اضغط هنا</button>
     </a>
+</div>
 </div> 
         
 			<div class="social">
