@@ -353,7 +353,40 @@
         <button>للتواصل اضغط هنا</button>
     </a>
 </div> 
-        
+        <style>
+
+.button-container {
+    text-align: center;
+    margin: 40px auto; /* التحكم في المسافة فوق وتحت المربع */
+    padding: 20px; /* إضافة مساحة داخلية للمربع */
+    background-color: #f8f9fa; /* لون خلفية للمربع */
+    border-radius: 12px; /* تدوير زوايا المربع */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+    max-width: 300px; /* تحديد أقصى عرض للمربع */
+}
+
+.button-container a {
+    text-decoration: none; /* إزالة التحديد من الرابط */
+}
+
+.button-container button {
+    font-size: 16px; /* حجم الخط في الزر */
+    padding: 12px 25px; /* حجم الحشو داخل الزر */
+    background-color: #007bff; /* لون خلفية الزر */
+    color: white; /* لون النص داخل الزر */
+    border: none; /* إزالة الحدود */
+    border-radius: 8px; /* تدوير زوايا الزر */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* ظل الزر */
+    cursor: pointer; /* تغيير المؤشر عند المرور فوق الزر */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* تأثير الانتقال */
+}
+
+.button-container button:hover {
+    background-color: #0056b3; /* لون الزر عند المرور بالماوس */
+    transform: scale(1.05); /* تكبير الزر عند المرور بالماوس */
+}
+
+		</style>
 			<div class="social">
 				<a href="https://x.com/Panorama_Q" target="_blank"><i class='bx bxl-twitter'></i></a>
 			    <a href="https://facebook.com/palqassim" target="_blank"><i class='bx bxl-facebook-square' ></i></a>
