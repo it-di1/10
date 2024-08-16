@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Service;
+use App\Models\Customer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -14,12 +15,18 @@ class ServiceController extends Controller
         return view('services.create');
     }
     
-   
     public function index()
     {
         $services = Service::all();
-       return view('index', compact('services'));
+        $customers = Customer::all();
+
+        return view('index', compact('services', 'customers'));
     }
+   // public function index()
+   // {
+     //   $services = Service::all();
+       //return view('index', compact('services'));
+    //}
    //جديد
     public function view(){
 
