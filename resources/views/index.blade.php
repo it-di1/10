@@ -24,9 +24,10 @@
 <style>
         .button-container {
 			position: fixed;
-            top: 0; /* إزالة المسافة من الأعلى */
+            top: 20px; /* يمكنك تعديل المسافة من الأعلى حسب الحاجة */
             right: 20px; /* تحديد المسافة من يمين الصفحة */
             display: flex;
+            flex-direction: column; /* ترتيب العناصر عموديًا */
             gap: 10px; /* المسافة بين الأزرار */
             z-index: 1000;
             margin: 0; /* إزالة أي مسافة افتراضية */
