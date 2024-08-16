@@ -11,7 +11,7 @@ class CustomerController extends Controller
     public function index()
     {
         $customers = Customer::all(); // Fetch all customers from the database
-        return view('customers.index', compact('customers'));
+        return view('index', compact('customers'));
     }
 
     // Show the form for creating a new customer
