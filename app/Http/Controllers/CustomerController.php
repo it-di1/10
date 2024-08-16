@@ -7,23 +7,20 @@ use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
+    // Display a listing of customers
+    public function index()
+    {
+        $customers = Customer::all(); // Fetch all customers from the database
+        return view('customers.index', compact('customers'));
+    }
+
+    // Show the form for creating a new customer
     public function create()
     {
         return view('customers.create');
     }
-    
-    public function index()
-    {
-        $customers = Customer::all();
-        return view('index', compact('customers'));
-    }
 
-    public function view()
-    {
-        $customers = Customer::all();
-        return view('customers.view', compact('customers'));
-    }
-
+    // Store a newly created customer in storage
     public function store(Request $request)
     {
         $request->validate([
@@ -37,8 +34,8 @@ class CustomerController extends Controller
         $customer->Description = $request->Description;
 
         if ($request->hasFile('Picture')) {
-            $image = 'logo_' . uniqid() . '.' . $request->Picture->getClientOriginalExtension();
-            $request->Picture->move(public_path('logo'), $image);
+            $image = 'customer_' . uniqid() . '.' . $request->Picture->getClientOriginalExtension();
+            $request->Picture->move(public_path('customer'), $image);
             $customer->Picture = $image;
         }
 
@@ -47,12 +44,14 @@ class CustomerController extends Controller
         return redirect()->route('customers.index')->with('success', 'تم إضافة العميل بنجاح');
     }
 
+    // Show the form for editing the specified customer
     public function edit($id)
     {
         $customer = Customer::findOrFail($id);
         return view('customers.edit', compact('customer'));
     }
 
+    // Update the specified customer in storage
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -66,12 +65,12 @@ class CustomerController extends Controller
         $customer->Description = $request->Description;
 
         if ($request->hasFile('Picture')) {
-            if (file_exists(public_path('logo/' . $customer->Picture))) {
-                unlink(public_path('logo/' . $customer->Picture));
+            if (file_exists(public_path('customer/' . $customer->Picture))) {
+                unlink(public_path('customer/' . $customer->Picture));
             }
 
-            $image = 'logo_' . uniqid() . '.' . $request->Picture->getClientOriginalExtension();
-            $request->Picture->move(public_path('logo'), $image);
+            $image = 'customer_' . uniqid() . '.' . $request->Picture->getClientOriginalExtension();
+            $request->Picture->move(public_path('customer'), $image);
             $customer->Picture = $image;
         }
 
@@ -80,16 +79,24 @@ class CustomerController extends Controller
         return redirect()->route('customers.index')->with('success', 'تم تحديث العميل بنجاح');
     }
 
+    // Remove the specified customer from storage
     public function destroy($id)
     {
         $customer = Customer::findOrFail($id);
 
-        if (file_exists(public_path('logo/' . $customer->Picture))) {
-            unlink(public_path('logo/' . $customer->Picture));
+        if (file_exists(public_path('customer/' . $customer->Picture))) {
+            unlink(public_path('customer/' . $customer->Picture));
         }
 
         $customer->delete();
 
         return redirect()->route('customers.index')->with('success', 'تم حذف العميل بنجاح');
+    }
+
+    // Display a view page for customers
+    public function view()
+    {
+        $customers = Customer::all(); // Fetch all customers
+        return view('customers.view', compact('customers'));
     }
 }
