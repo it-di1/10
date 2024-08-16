@@ -48,8 +48,9 @@ Route::get('services/create', [ServiceController::class, 'create'])->name('servi
 // يعالج بيانات النموذج عند تقديمه
 Route::post('services', [ServiceController::class, 'store'])->name('services.store');
 
+Route::get('/customers/view', [CustomerController::class, 'view'])->name('customers.view');
 
-Route::get('/customers/view', [CustomerController::class, 'view']);
+//Route::get('/customers/view', [CustomerController::class, 'view']);
 Route::resource('customers', CustomerController::class);
 
 // Create and store routes for customers
