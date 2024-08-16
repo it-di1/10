@@ -206,20 +206,13 @@
    </div> -->
 
    <div class="glass-container">
-            @foreach($customers as $customer)
-                <div class=" partner-item">
-                    <h2 class="major">{{ $customer->Title }}</h2> <!-- تأكد من أن 'Title' هو الاسم الصحيح -->
-                    <img src="{{ asset('logo/' . $customer->Picture) }}" alt="{{ $customer->Title }}"> <!-- تأكد من أن 'Picture' هو الاسم الصحيح -->
-                    <p class="arabic-text">
-                        {{ $customer->Description }} <!-- تأكد من أن 'Description' هو الاسم الصحيح -->
-                    </p>
-
-					
-                 <!--   <a href="{{ route('services.edit', $service->id) }}" class="btn btn-warning">تعديل</a> -->
-                
-
-                </div>
-            @endforeach
+   @foreach($customers as $customer)
+    <div>
+        <h2>{{ $customer->Title }}</h2>
+        <p>{{ $customer->Description }}</p>
+        <img src="{{ asset('customer/' . $customer->Picture) }}" alt="{{ $customer->Title }}">
+    </div>
+@endforeach
         </div>
         
 
