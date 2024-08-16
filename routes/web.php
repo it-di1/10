@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 //
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\CustomerController;
 
 Route::get('/', function () {
    return view('index');
@@ -36,6 +37,8 @@ Route::get('/input', function () {
 //
 Route::get('/', [ServiceController::class, 'index']);
 
+//Route::get('/', [CustomerController::class, 'index']);
+
 
 Route::resource('services', ServiceController::class);
 
@@ -47,4 +50,11 @@ Route::get('services/create', [ServiceController::class, 'create'])->name('servi
 // يعالج بيانات النموذج عند تقديمه
 Route::post('services', [ServiceController::class, 'store'])->name('services.store');
 
+Route::get('/customers/view', [CustomerController::class, 'view'])->name('customers.view');
 
+//Route::get('/customers/view', [CustomerController::class, 'view']);
+Route::resource('customers', CustomerController::class);
+
+// Create and store routes for customers
+Route::get('customers/create', [CustomerController::class, 'create'])->name('customers.create');
+Route::post('customers', [CustomerController::class, 'store'])->name('customers.store');
