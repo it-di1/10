@@ -24,8 +24,8 @@
 
    <!-- Fixed circular buttons -->
    <a href="#main-page" class="back-to-home">
-            <img src="public/images/webpagehome_85808.ico" alt="Home">
-        </a>
+        <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Home">
+    </a>
         <a href="{{ url('/input') }}" class="contact-button">
             <img src="images/contact-icon.png" alt="Contact">
         </a>
@@ -56,7 +56,7 @@
         .contact-button {
             top: 20px;
             right: 20px;
-            background: rgba(0, 150, 136, 0.3); /* لون زجاجي مختلف لزر التواصل */
+            background: rgba(0, 150, 136, 0.3); 
         }
 
         .back-to-home img, .contact-button img {
