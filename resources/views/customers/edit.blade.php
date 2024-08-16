@@ -10,18 +10,18 @@
     <div class="container mt-5">
         <h1>تعديل الخدمة</h1>
 
-        <form action="/customers/{{ $customers->id }}" method="POST" enctype="multipart/form-data">
+        <form action="/customers/{{ $customer->id }}" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="hidden" name="_method" value="PUT">
 
             <div class="form-group">
                 <label for="Title">العنوان:</label>
-                <input type="text" name="Title" id="Title" class="form-control" value="{{ old('Title', $service->Title) }}" required>
+                <input type="text" name="Title" id="Title" class="form-control" value="{{ old('Title', $customer->Title) }}" required>
             </div>
 
             <div class="form-group">
                 <label for="Description">الوصف:</label>
-                <textarea name="Description" id="Description" class="form-control" required>{{ old('Description', $service->Description) }}</textarea>
+                <textarea name="Description" id="Description" class="form-control" required>{{ old('Description', $customer->Description) }}</textarea>
             </div>
 
             <div class="form-group">
@@ -30,13 +30,12 @@
             </div>
 
             <button type="submit" class="btn btn-primary">تحديث</button>
+        </form>
 
-                <form action="/customers/{{ $customers->id }}" method="POST" style="display: inline;">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    <input type="hidden" name="_method" value="DELETE">
-                    <button type="submit" class="btn btn-danger">حذف</button>
-                </form>
-           
+        <form action="/customers/{{ $customer->id }}" method="POST" style="display: inline;">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit" class="btn btn-danger">حذف</button>
         </form>
     </div>
 
