@@ -21,52 +21,16 @@
             </ul>
         </nav>
 </div>
-<style>
-        .button-container {
-			position: fixed;
-            top: 0px; 
-            right: 10px; 
-            gap: 10px; 
-            z-index: 1000;
-			margin: 0;
-            padding: 0; 
-			display: flex;
-        }
 
-        .button-container a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
-            height: 60px;
-            background: rgba(255, 165, 0, 0.3); 
-            backdrop-filter: blur(10px);
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: 0.3s ease, transform 0.3s ease;
-        }
-
-        .button-container a:hover {
-            background: rgba(255, 165, 0, 0.6);
-            transform: scale(1.1);
-        }
-
-        .button-container img {
-            width: 30px;
-            height: 30px;
-        }
-    </style>
 </head>
 <body>
 
-<div class="button-container">
+
         <a href="#main-page">
             <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Home">
         </a>
-        <a href="{{ url('/input') }}">
-            <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Contact" />
-        </a>
-    </div>
+       
+    
 
 		
         
@@ -391,6 +355,10 @@
         <button>للتواصل اضغط هنا</button>
     </a>
 </div> -->
+         <a href="{{ url('/input') }}">
+            <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Contact" />
+                </a>
+				
 			<div class="social">
 				<a href="https://x.com/Panorama_Q" target="_blank"><i class='bx bxl-twitter'></i></a>
 			    <a href="https://facebook.com/palqassim" target="_blank"><i class='bx bxl-facebook-square' ></i></a>
