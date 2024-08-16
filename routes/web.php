@@ -44,5 +44,5 @@ Route::post('services', [ServiceController::class, 'store'])->name('services.sto
 Route::get('/services/view', [ServiceController::class, 'view']);
 
 
-Route::get('services', [ServiceController::class, 'index']); // For listing all services
+//Route::get('services', [ServiceController::class, 'index']); // For listing all services
 Route::get('services/view', [ServiceController::class, 'view']); // For viewing services
