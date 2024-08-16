@@ -359,7 +359,7 @@
     text-align: center;
     margin: 40px auto; /* التحكم في المسافة فوق وتحت المربع */
     padding: 20px; /* إضافة مساحة داخلية للمربع */
-    background-color: #f8f9fa; /* لون خلفية للمربع */
+    background-color: #fff4e6; /* لون خلفية للمربع (برتقالي فاتح) */
     border-radius: 12px; /* تدوير زوايا المربع */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
     max-width: 300px; /* تحديد أقصى عرض للمربع */
@@ -372,7 +372,7 @@
 .button-container button {
     font-size: 16px; /* حجم الخط في الزر */
     padding: 12px 25px; /* حجم الحشو داخل الزر */
-    background-color: #007bff; /* لون خلفية الزر */
+    background-color: #ffa500; /* لون خلفية الزر (برتقالي) */
     color: white; /* لون النص داخل الزر */
     border: none; /* إزالة الحدود */
     border-radius: 8px; /* تدوير زوايا الزر */
@@ -382,9 +382,10 @@
 }
 
 .button-container button:hover {
-    background-color: #0056b3; /* لون الزر عند المرور بالماوس */
+    background-color: #ff8c00; /* لون الزر عند المرور بالماوس (برتقالي داكن) */
     transform: scale(1.05); /* تكبير الزر عند المرور بالماوس */
 }
+
 
 		</style>
 			<div class="social">
