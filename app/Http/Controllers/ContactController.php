@@ -8,6 +8,7 @@ use App\Models\contact;
 
 class ContactController extends Controller
 {
+
     public function data (Request $request){
 
          //  dd($request->name);
@@ -23,4 +24,5 @@ class ContactController extends Controller
 
          return redirect('/hj');
     }
+   
 }

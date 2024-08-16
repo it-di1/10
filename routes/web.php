@@ -34,6 +34,11 @@ Route::get('/input', function () {
     return view('input');
 });
 
+Route::get('/hj', function () {
+  return view('hj');
+});
+
+
 //
 Route::get('/', [ServiceController::class, 'index']);
 
@@ -58,3 +63,10 @@ Route::resource('customers', CustomerController::class);
 // Create and store routes for customers
 Route::get('customers/create', [CustomerController::class, 'create'])->name('customers.create');
 Route::post('customers', [CustomerController::class, 'store'])->name('customers.store');
+
+Route::get('message', function () {
+
+  $msg = DB::table('contacts')->get();
+
+  return view('message', ['msg' => $msg]);
+});;

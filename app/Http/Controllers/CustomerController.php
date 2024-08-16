@@ -19,13 +19,13 @@ class CustomerController extends Controller
         $services = Service::all(); // Fetch all services
         return view('index', compact('customers', 'services')); // Pass customers and services to the view
     }
-    // Show the form for creating a new customer
+    
     public function create()
     {
         return view('customers.create');
     }
 
-    // Store a newly created customer in storage
+    
     public function store(Request $request)
     {
         $request->validate([
@@ -49,14 +49,13 @@ class CustomerController extends Controller
         return redirect()->route('customers.index')->with('success', 'تم إضافة العميل بنجاح');
     }
 
-    // Show the form for editing the specified customer
     public function edit($id)
     {
         $customer = Customer::findOrFail($id);
         return view('customers.edit', compact('customer'));
     }
 
-    // Update the specified customer in storage
+  
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -84,7 +83,6 @@ class CustomerController extends Controller
         return redirect()->route('customers.index')->with('success', 'تم تحديث العميل بنجاح');
     }
 
-    // Remove the specified customer from storage
     public function destroy($id)
     {
         $customer = Customer::findOrFail($id);
@@ -98,7 +96,6 @@ class CustomerController extends Controller
         return redirect()->route('customers.index')->with('success', 'تم حذف العميل بنجاح');
     }
 
-    // Display a view page for customers
     public function view()
     {
         $customers = Customer::all(); // Fetch all customers
