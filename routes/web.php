@@ -37,6 +37,8 @@ Route::get('/input', function () {
 //
 Route::get('/', [ServiceController::class, 'index']);
 
+Route::get('/customers', [CustomerController::class, 'index']);
+
 
 Route::resource('services', ServiceController::class);
 

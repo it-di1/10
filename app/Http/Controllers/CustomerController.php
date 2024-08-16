@@ -10,10 +10,10 @@ class CustomerController extends Controller
     // Display a listing of customers
     public function index()
     {
-        $customers = Customer::all(); // Fetch all customers from the database
-        return view('index', compact('customers')); 
+        $customers = Customer::all(); // Fetch all customers
+        return view('index', compact('customers')); // Pass customers to the view
     }
-
+    
     // Show the form for creating a new customer
     public function create()
     {
