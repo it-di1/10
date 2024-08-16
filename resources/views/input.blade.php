@@ -39,7 +39,7 @@
     
 <article id="contact" class="glass-effect">
             <h2 class="major">اترك لنا رسالتك</h2>
-            <form method="post" action="/hj">
+            <form id="contact-form" method="post" action="/hj">
                 @csrf
                 <div class="fields">
                     <div class="field half">
@@ -60,11 +60,7 @@
                     <input type="reset" value="مسح" />
             </form> 
             
-        </article> 
-    
-
-
-
+            
 
 </body> 
 </html>

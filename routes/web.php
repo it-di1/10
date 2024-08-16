@@ -7,8 +7,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/gg', function () {
-    return view('index');
+ Route::get('/hj', function () {
+     return view('hj');
 });
 
 

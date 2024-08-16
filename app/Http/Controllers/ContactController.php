@@ -21,6 +21,6 @@ class ContactController extends Controller
 
         $lap->save();
 
-        return redirect('/gg');
+         return redirect('/hj');
     }
 }
