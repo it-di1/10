@@ -6,9 +6,9 @@
     <title>إنشاء خدمة جديدة</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            background-color: #CCD5D2; 
-            font-family: 'Tajawal', sans-serif; 
+          body {
+            background-color: #f0f4f8; /* Light background color for better contrast */
+            font-family: 'Tajawal', sans-serif;
             direction: rtl;
             text-align: right;
         }
@@ -16,7 +16,7 @@
         .form-container {
             margin-top: 50px;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #ffffff; /* White background for the form */
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             max-width: 600px;
@@ -25,26 +25,26 @@
         }
 
         h2 {
-            color: #333; 
+            color: #152935; /* Dark color for heading */
         }
 
         .form-label {
             font-weight: bold;
-            color: #555; 
+            color: #152935; /* Dark color for labels */
         }
 
         .btn-pink {
-            background-color: #e4a576; 
-            border-color: #e4a576;
-            color: white;
+            background-color: #698ea2; /* Button background color */
+            border-color: #698ea2;
+            color: white; /* Text color on button */
         }
 
         .btn-pink:hover {
-            background-color: #152935; 
+            background-color: #152935; /* Darker color on hover */
             border-color: #152935;
-            color: white;
+            color: #ffffff; /* White text color on hover */
         }
-    </style>
+        </style>
 </head>
 <body>
 
