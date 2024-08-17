@@ -406,6 +406,7 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		border: 3px solid rgba(255, 165, 0, 1);
         transition: 0.3s ease, transform 0.3s ease;
         z-index: 1000;
     }
