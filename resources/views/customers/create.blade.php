@@ -50,22 +50,22 @@
 
 <div class="container">
     <div class="form-container">
-        <h2>إنشاء خدمة جديدة</h2>
+        <h2>إضافة عميل جديد</h2>
         <form action="{{ route('customers.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
-                <label for="title" class="form-label">عنوان الخدمة</label>
+                <label for="title" class="form-label">اسم العميل</label>
                 <input type="text" class="form-control" id="title" name="Title" required>
             </div>
             <div class="mb-3">
-                <label for="description" class="form-label">وصف الخدمة</label>
+                <label for="description" class="form-label">الوصف</label>
                 <textarea class="form-control" id="description" name="Description" rows="4" required></textarea>
             </div>
             <div class="mb-3">
-                <label for="picture" class="form-label">صورة الخدمة</label>
+                <label for="picture" class="form-label">الصوره</label>
                 <input type="file" class="form-control" id="picture" name="Picture" required>
             </div>
-            <button type="submit" class="btn btn-pink">إضافة الخدمة</button>
+            <button type="submit" class="btn btn-pink">إضافة العميل</button>
         </form>
     </div>
 </div>
