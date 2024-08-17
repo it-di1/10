@@ -7,7 +7,7 @@
             background-color: #698ea2; 
             font-family: 'Tajawal', sans-serif;
             color: white; 
-            margin: 0;
+            margin: 10;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -23,14 +23,15 @@
         }
 
         .message-container {
-            width: 90%;
+            width: 50%;
             max-width: 1200px;
+            margin:top:10px;
         }
 
         .message-box {
             background: rgba(255, 255, 255, 0.2); 
             border: 1px solid rgba(255, 255, 255, 0.3); 
-            padding: 20px;
+            padding: 5px;
             border-radius: 10px;
             margin-bottom: 20px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
@@ -38,7 +39,7 @@
         }
 
         .message-box p {
-            margin: 0;
+            margin: 10;
             color: #ffffff; 
         }
     </style>
@@ -48,7 +49,11 @@
     <div class="message-container">
         <ul>
             @foreach ($msg as $data)
-                <li class="message-box"><p>{{ $data->message }}</p></li>
+                <li class="message-box"><p>
+              <h3>Name:  {{ $data->Name }}<h3><br>
+              <h3>Email:   {{ $data->Email }}</h3><br>
+              <h3>Message: {{ $data->message }}</h3>
+                </p></li>
             @endforeach
         </ul>
     </div>
