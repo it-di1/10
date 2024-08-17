@@ -3,188 +3,134 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>اترك لنا رسالتك</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        body{
-            background:#220000;
+        body {
+            background-color: #698ea2; /* خلفية الصفحة */
+            font-family: 'Tajawal', sans-serif;
+            color: white; /* لون النصوص */
         }
+
         #contact {
-            width: 600px; 
-            background:white;
-            margin: 0 auto; 
-            margin-top:100px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-    
-        #contact h2 {
-            text-align: center;
-        }
-
-        #contact .field {
             display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;}
-
-        #contact .actions {
-            text-align: center;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.1); /* خلفية زجاجية */
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            margin: 50px auto;
+            box-sizing: border-box;
         }
 
-		#contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    margin: 50px auto;
-    box-sizing: border-box;
-}
+        h2.major {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: white;
+        }
 
-h2.major {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    color: white;
-}
+        form {
+            width: 100%; 
+            max-width: 1000px;
+        }
 
-form {
-    width: 100%; 
-    max-width: 1000px;
-}
+        .fields {
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            box-sizing: border-box;
+            margin: 10px 10px auto;
+        }
 
+        .field {
+            width: 100%;
+        }
 
-.fields .field {
-   
-    width: 100%;
-}
+        .field.half {
+            width: 48%;
+        }
 
-.fields .field.half {
-  
-    width: 48%;
-}
+        .field input, .field textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2); /* خلفية زجاجية للحقل */
+            color: #ffffff; /* لون النصوص داخل الحقول */
+        }
 
-.fields {
-     padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    box-sizing: border-box;
-    margin: 10px 10px auto;
-}
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-.button-container {
-    text-align: center; 
-    margin-top: 1rem; 
-}
+        .actions li {
+            list-style: none;
+        }
 
-.field input, .field textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-}
+        .actions input {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
 
-.actions {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
+        .actions input.primary {
+            background-color: #152935; /* لون زر الإرسال */
+            color: white;
+        }
 
-.actions li {
-    list-style: none;
-}
+        .actions input.primary:hover {
+            background-color: #698ea2; /* لون الخلفية عند التحويم */
+        }
 
-.actions input {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
+        .actions input {
+            background-color: #dd4b39; /* لون زر المسح */
+            color: white;
+        }
 
-.actions input.primary {
-    background-color: #008CBA;
-    color: white;
-}
-
-.actions input:hover {
-    opacity: 0.9;
-}
-
-
-.glass-effect {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    text-align: center;
-}
-
-
-input[type="submit"].primary,
-input[type="reset"] {
-    background-color: #dd4b39;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"].primary:hover,
-input[type="reset"]:hover {
-    background-color: #c43a28;
-}
-
-
+        .actions input:hover {
+            background-color: #c43a28; /* لون الخلفية عند التحويم */
+        }
     </style>
 </head>
 <body>
-    
-    
-<article id="contact" class="glass-effect">
-            <h2 class="major">اترك لنا رسالتك</h2>
-            <form id="contact-form" method="post" action="/hj">
-                @csrf
-                <div class="fields">
-                    <div class="field half">
-                        <label for="name"></label>
-                        <input type="text" name="name" id="name" placeholder="الاسم" />
-                    </div>
-                    <div class="field half">
-                        <label for="email"></label>
-                        <input type="text" name="email" id="email"placeholder="البريد الإلكتروني" />
-                    </div>
-                    <div class="field">
-                        <label for="message"></label>
-                        <textarea name="message" placeholder="الرسالة" id="message" rows="4"></textarea>
-                    </div>
-                </div>
-                <ul class="actions">
-                    <input type="submit" value="ارسال" class="primary" />
-                    <input type="reset" value="مسح" />
-</form>
-        </article> 
-    
 
+<article id="contact" class="glass-effect">
+    <h2 class="major">اترك لنا رسالتك</h2>
+    <form id="contact-form" method="post" action="/hj">
+        @csrf
+        <div class="fields">
+            <div class="field half">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="الاسم" />
+            </div>
+            <div class="field half">
+                <label for="email"></label>
+                <input type="text" name="email" id="email" placeholder="البريد الإلكتروني" />
+            </div>
+            <div class="field">
+                <label for="message"></label>
+                <textarea name="message" placeholder="الرسالة" id="message" rows="4"></textarea>
+            </div>
+        </div>
+        <ul class="actions">
+            <input type="submit" value="ارسال" class="primary" />
+            <input type="reset" value="مسح" />
+        </ul>
+    </form>
+</article> 
 
 </body> 
 </html>
