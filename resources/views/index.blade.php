@@ -372,7 +372,7 @@
 
 		</style>
 			<div class="social">
-				<a href="https://x.com/Panorama_Q" target="_blank"><i class='bx bxl-twitter'></i></a>
+			    <a href="https://x.com/Panorama_Q" target="_blank"><i class='bx bxl-twitter'></i></a>
 			    <a href="https://facebook.com/palqassim" target="_blank"><i class='bx bxl-facebook-square' ></i></a>
 				<a href="https://api.whatsapp.com/send/?phone=9660553172552" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
 				<a href="https://snapchat.com/t/mh05HGb6" target="_blank"><i class='bx bxl-snapchat' ></i></a>
@@ -399,13 +399,13 @@
         right: 20px;
         width: 60px;
         height: 60px;
-        background: #ffffff; /* خلفية الزر */
+        background: #ffffff; 
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 3px solid #FFA500; /* بوردر برتقالي */
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2); /* ظل 3D */
+        border: 3px solid #FFA500; 
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2); 
         transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         z-index: 1000;
     }
@@ -416,9 +416,9 @@
     }
 
     .back-to-home:hover {
-        background: #f9f9f9; /* لون خلفية أفتح عند التحويم */
-        transform: translateY(-5px); /* رفع الزر عند التحويم */
-        box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4), -4px -4px 8px rgba(0, 0, 0, 0.1); /* ظل 3D مميز */
+        background: #f9f9f9; 
+        transform: translateY(-5px); 
+        box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4), -4px -4px 8px rgba(0, 0, 0, 0.1); 
     }
 </style>
 
