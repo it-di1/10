@@ -64,7 +64,7 @@
                 <label for="picture" class="form-label">صورة الخدمة</label>
                 <input type="file" class="form-control" id="picture" name="Picture" required>
             </div>
-            <button type="submit" class="btn btn-primary">إضافة الخدمة</button>
+            <button type="submit" class="btn btn-pink">إضافة الخدمة</button>
         </form>
     </div>
 </div>
