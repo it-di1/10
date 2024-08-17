@@ -419,7 +419,7 @@
     .back-to-home:hover {
         background: linear-gradient(145deg, #ffffff, #f1f1f1); 
         transform: scale(1.1);
-        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.9); 
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.9); }
 </style>
 
     <script>
