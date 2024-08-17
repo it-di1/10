@@ -7,9 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
-            background-color: #698ea2; 
+            background-color: #698ea2; /* خلفية الصفحة */
             font-family: 'Tajawal', sans-serif;
-            color: white;
+            color: white; /* لون النصوص */
         }
 
         #contact {
@@ -19,7 +19,7 @@
             align-items: center;
             width: 90%;
             max-width: 1200px;
-            background: rgba(255, 255, 255, 0.1); 
+            background: rgba(255, 255, 255, 0.1); /* خلفية زجاجية */
             padding: 20px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
@@ -32,7 +32,7 @@
             text-align: center;
             margin-bottom: 10px;
             font-size: 1.5rem;
-            color: white; 
+            color: white; /* لون العنوان */
         }
 
         form {
@@ -62,14 +62,14 @@
             width: 100%;
             padding: 10px;
             border-radius: 5px;
-            border: 2px solid #003366; 
-            background: rgba(255, 255, 255, 0.2); 
-            color: #000000; 
-            font-size: 16px; 
+            border: 2px solid #003366; /* حدود كحلي للفيلدات */
+            background: rgba(255, 255, 255, 0.2); /* خلفية زجاجية للحقل */
+            color: #000000; /* لون النصوص داخل الحقول */
+            font-size: 16px; /* حجم الخط في الفيلدات */
         }
 
         .field input:focus, .field textarea:focus {
-            border-color: #004080; 
+            border-color: #004080; /* تغيير لون الحدود عند التركيز */
             outline: none;
         }
 
@@ -90,12 +90,12 @@
             border: none;
             cursor: pointer;
             font-weight: bold;
-            background-color: #003366; 
+            background-color: #003366; /* لون زر الإرسال كحلي */
             color: white;
         }
 
         .actions input.primary:hover {
-            background-color: #002244; 
+            background-color: #002244; /* لون الزر عند التحويم */
         }
 
         .actions input {
@@ -104,12 +104,12 @@
             border: none;
             cursor: pointer;
             font-weight: bold;
-            background-color: #003366; 
+            background-color: #003366; /* لون زر المسح كحلي */
             color: white;
         }
 
         .actions input:hover {
-            background-color: #002244; 
+            background-color: #002244; /* لون الزر عند التحويم */
         }
     </style>
 </head>
