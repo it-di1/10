@@ -307,6 +307,7 @@
 			
 </head>
 <body>
+   <h2 class="major"> خدماتنا</h2>
     <section id="services">
         <div class="glass-container">
             @foreach($services as $service)
