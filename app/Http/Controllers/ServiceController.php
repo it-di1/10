@@ -22,12 +22,7 @@ class ServiceController extends Controller
 
         return view('index', compact('services', 'customers'));
     }
-   // public function index()
-   // {
-     //   $services = Service::all();
-       //return view('index', compact('services'));
-    //}
-   //جديد
+    
     public function view(){
 
         $services = Service::all();

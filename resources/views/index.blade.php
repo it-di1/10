@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>بانوراما القصيم</title>
+    <title>بانوراما القصيم للبرمجة والتصميم</title>
     <link rel="stylesheet" href="assets\css\main.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -328,28 +328,6 @@
 
     <div class="container">
 		
-		
-			<!-- <h2 class="major">اترك لنا رسالتك</h2>
-			<form method="post" action="/hj">
-				<div class="fields">
-					<div class="field half">
-						<label for="name">الاسم</label>
-						<input type="text" name="name" id="name" />
-					</div>
-					<div class="field half">
-						<label for="email">البريد الالكتروني</label>
-						<input type="text" name="email" id="email" />
-					</div>
-					<div class="field">
-						<label for="message">الرسالة</label>
-						<textarea name="message" id="message" rows="4"></textarea>
-					</div>
-				</div>
-				<ul class="actions">
-					<li><input type="submit" value="ارسال" class="primary" /></li>
-					<li><input type="reset" value="مسح" /></li>
-				</ul>
-			</form>  -->
 
 			<div id="contact">
 			<div class="button-container">
@@ -387,7 +365,11 @@
 
 .button-container button:hover {
     background-color: #ff8c00; 
+<<<<<<< HEAD
     transform: scale(1.05);
+=======
+    transform: scale(1.05); 
+>>>>>>> d3764bda2ce1053dcae1f24707126f411075b240
 }
 
 

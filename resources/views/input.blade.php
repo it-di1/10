@@ -162,7 +162,7 @@ input[type="reset"]:hover {
     
 <article id="contact" class="glass-effect">
             <h2 class="major">اترك لنا رسالتك</h2>
-            <form method="post" action="/hj">
+            <form id="contact-form" method="post" action="/hj">
                 @csrf
                 <div class="fields">
                     <div class="field half">
@@ -181,8 +181,7 @@ input[type="reset"]:hover {
                 <ul class="actions">
                     <input type="submit" value="ارسال" class="primary" />
                     <input type="reset" value="مسح" />
-            </form> 
-            
+</form>
         </article> 
     
 
