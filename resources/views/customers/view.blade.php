@@ -12,10 +12,10 @@
         <div class="glass-container">
             @foreach($customers as $customer)
                 <div class="service-item">
-                    <h2 class="major">{{ $customer->Title }}</h2> <!-- تأكد من أن 'Title' هو الاسم الصحيح -->
-                    <img src="{{ asset('logo/' . $customer->Picture) }}" alt="{{ $customer->Title }}"> <!-- تأكد من أن 'Picture' هو الاسم الصحيح -->
+                    <h2 class="major">{{ $customer->Title }}</h2> 
+                    <img src="{{ asset('logo/' . $customer->Picture) }}" alt="{{ $customer->Title }}"> 
                     <p class="arabic-text">
-                        {{ $customer->Description }} <!-- تأكد من أن 'Description' هو الاسم الصحيح -->
+                        {{ $customer->Description }} 
                     </p>
 
 					

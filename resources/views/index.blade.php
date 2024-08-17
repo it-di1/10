@@ -302,19 +302,17 @@
 				</div>
 			</section> -->
 
-			<style>
-        /* أضف أي أنماط CSS هنا */
-    </style>
+			
 </head>
 <body>
     <section id="services">
         <div class="glass-container">
             @foreach($services as $service)
                 <div class="service-item">
-                    <h2 class="major">{{ $service->Title }}</h2> <!-- تأكد من أن 'Title' هو الاسم الصحيح -->
-                    <img src="{{ asset('logo/' . $service->Picture) }}" alt="{{ $service->Title }}"> <!-- تأكد من أن 'Picture' هو الاسم الصحيح -->
+                    <h2 class="major">{{ $service->Title }}</h2> 
+                    <img src="{{ asset('logo/' . $service->Picture) }}" alt="{{ $service->Title }}"> 
                     <p class="arabic-text">
-                        {{ $service->Description }} <!-- تأكد من أن 'Description' هو الاسم الصحيح -->
+                        {{ $service->Description }} 
                     </p>
 
 					
@@ -363,33 +361,33 @@
 
 .button-container {
     text-align: center;
-    margin: 40px auto; /* التحكم في المسافة فوق وتحت المربع */
-    padding: 20px; /* إضافة مساحة داخلية للمربع */
-    background-color: #fff4e6; /* لون خلفية للمربع (برتقالي فاتح) */
-    border-radius: 12px; /* تدوير زوايا المربع */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
-    max-width: 300px; /* تحديد أقصى عرض للمربع */
+    margin: 40px auto; 
+    padding: 20px; 
+    background-color: #fff4e6; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 300px; 
 }
 
 .button-container a {
-    text-decoration: none; /* إزالة التحديد من الرابط */
+    text-decoration: none; 
 }
 
 .button-container button {
-    font-size: 16px; /* حجم الخط في الزر */
-    padding: 12px 25px; /* حجم الحشو داخل الزر */
-    background-color: #ffa500; /* لون خلفية الزر (برتقالي) */
-    color: white; /* لون النص داخل الزر */
-    border: none; /* إزالة الحدود */
-    border-radius: 8px; /* تدوير زوايا الزر */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* ظل الزر */
-    cursor: pointer; /* تغيير المؤشر عند المرور فوق الزر */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* تأثير الانتقال */
+    font-size: 16px; 
+    padding: 12px 25px; 
+    background-color: #ffa500; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .button-container button:hover {
-    background-color: #ff8c00; /* لون الزر عند المرور بالماوس (برتقالي داكن) */
-    transform: scale(1.05); /* تكبير الزر عند المرور بالماوس */
+    background-color: #ff8c00; 
+    transform: scale(1.05);
 }
 
 
