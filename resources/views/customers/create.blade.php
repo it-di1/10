@@ -42,6 +42,7 @@
         .btn-pink:hover {
             background-color: #152935; 
             border-color: #152935;
+            color: white;
         }
     </style>
 </head>
