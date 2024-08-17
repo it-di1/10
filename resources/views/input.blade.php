@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اترك لنا رسالتك</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
@@ -62,14 +62,14 @@
             width: 100%;
             padding: 10px;
             border-radius: 5px;
-            border: 2px solid #003366; 
+            border: 2px solid #152935; 
             background: rgba(255, 255, 255, 0.2); 
             color: #000000; 
             font-size: 16px; 
         }
 
         .field input:focus, .field textarea:focus {
-            border-color: #004080; 
+            border-color: #698ea2; 
             outline: none;
         }
 
@@ -90,12 +90,12 @@
             border: none;
             cursor: pointer;
             font-weight: bold;
-            background-color: #003366; 
+            background-color: #152935; 
             color: white;
         }
 
         .actions input.primary:hover {
-            background-color: #002244; 
+            background-color: #004080; 
         }
 
         .actions input {
@@ -104,12 +104,12 @@
             border: none;
             cursor: pointer;
             font-weight: bold;
-            background-color: #003366; 
+            background-color: #152935; 
             color: white;
         }
 
         .actions input:hover {
-            background-color: #002244; 
+            background-color: #004080; 
         }
     </style>
 </head>
