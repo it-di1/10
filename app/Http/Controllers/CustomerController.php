@@ -7,17 +7,13 @@ use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
-    // Display a listing of customers
-   // public function index()
-    //{
-      //  $customers = Customer::all(); // Fetch all customers
-      //  return view('index', compact('customers')); // Pass customers to the view
-    //}
+
+
     public function index()
     {
-        $customers = Customer::all(); // Fetch all customers
-        $services = Service::all(); // Fetch all services
-        return view('index', compact('customers', 'services')); // Pass customers and services to the view
+        $customers = Customer::all(); 
+        $services = Service::all(); 
+        return view('index', compact('customers', 'services')); 
     }
     
     public function create()
@@ -98,7 +94,7 @@ class CustomerController extends Controller
 
     public function view()
     {
-        $customers = Customer::all(); // Fetch all customers
+        $customers = Customer::all(); 
         return view('customers.view', compact('customers'));
     }
 }
