@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
           body {
-            background-color: #f0f4f8; /* Light background color for better contrast */
+            background-color: #f0f4f8; 
             font-family: 'Tajawal', sans-serif;
             direction: rtl;
             text-align: right;
@@ -16,7 +16,7 @@
         .form-container {
             margin-top: 50px;
             padding: 20px;
-            background-color: #ffffff; /* White background for the form */
+            background-color: #ffffff; 
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             max-width: 600px;
@@ -25,24 +25,24 @@
         }
 
         h2 {
-            color: #152935; /* Dark color for heading */
+            color: #152935;
         }
 
         .form-label {
             font-weight: bold;
-            color: #152935; /* Dark color for labels */
+            color: #152935; 
         }
 
         .btn-pink {
-            background-color: #698ea2; /* Button background color */
+            background-color: #698ea2; 
             border-color: #698ea2;
-            color: white; /* Text color on button */
+            color: white;
         }
 
         .btn-pink:hover {
-            background-color: #152935; /* Darker color on hover */
+            background-color: #152935; 
             border-color: #152935;
-            color: #ffffff; /* White text color on hover */
+            color: #ffffff; 
         }
         </style>
 </head>

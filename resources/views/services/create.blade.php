@@ -7,14 +7,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #f0f4f8; 
+            font-family: 'Tajawal', sans-serif;
+            direction: rtl;
+            text-align: right;
         }
+
         .form-container {
             margin-top: 50px;
             padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff; 
+            border-radius: 12px; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            color: #152935; 
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #152935; }
+
+        .btn-primary {
+            background-color: #698ea2; 
+            border-color: #698ea2;
+            color: white; 
+            border-radius: 8px; 
+        }
+
+        .btn-primary:hover {
+            background-color: #152935; 
+            border-color: #152935;
+            color: #ffffff; 
         }
     </style>
 </head>
