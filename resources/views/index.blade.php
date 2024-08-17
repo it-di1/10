@@ -365,11 +365,7 @@
 
 .button-container button:hover {
     background-color: #ff8c00; 
-<<<<<<< HEAD
     transform: scale(1.05);
-=======
-    transform: scale(1.05); 
->>>>>>> d3764bda2ce1053dcae1f24707126f411075b240
 }
 
 
