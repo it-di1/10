@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #F7E9DE; 
+            background-color: #CCD5D2; 
             font-family: 'Tajawal', sans-serif; 
             direction: rtl;
             text-align: right;
@@ -34,14 +34,14 @@
         }
 
         .btn-pink {
-            background-color: #DB3E1D; 
-            border-color: #DB3E1D;
+            background-color: #698ea2; 
+            border-color: #698ea2;
             color: white;
         }
 
         .btn-pink:hover {
-            background-color: #DB3E1D; 
-            border-color: #DB3E1D;
+            background-color: #152935; 
+            border-color: #152935;
         }
     </style>
 </head>
