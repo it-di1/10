@@ -355,7 +355,7 @@
 .button-container button {
     font-size: 16px; 
     padding: 12px 25px; 
-    background-color: #ffa500; 
+    background-color: #152935; 
     color: white; 
     border: none; 
     border-radius: 8px; 
@@ -365,7 +365,7 @@
 }
 
 .button-container button:hover {
-    background-color: #ff8c00; 
+    background-color: #152935; 
     transform: scale(1.05);
 }
 
