@@ -393,21 +393,21 @@
 </a>
 
 <style>
-    .back-to-home {
+     .back-to-home {
         position: fixed;
         top: 20px;
         right: 20px;
         width: 60px;
         height: 60px;
-        background: rgba(255, 255, 255, 1); 
+        background: linear-gradient(145deg, #f9f9f9, #e6e6e6); 
         backdrop-filter: blur(10px);
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		border: 3px solid rgba(255, 165, 0, 1);
-        transition: 0.3s ease, transform 0.3s ease;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.8); 
+        border: 3px solid rgba(255, 165, 0, 1); 
+        transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         z-index: 1000;
     }
 
@@ -417,9 +417,9 @@
     }
 
     .back-to-home:hover {
-        background: rgba(255, 255, 255, 0.8); 
+        background: linear-gradient(145deg, #ffffff, #f1f1f1); 
         transform: scale(1.1);
-    }
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.9); 
 </style>
 
     <script>
