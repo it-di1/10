@@ -13,8 +13,17 @@
             text-align: right;
         }
 
+        .header {
+            background-color: #698ea2; 
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
         .glass-container {
-            margin: 50px auto;
+            margin: 0 auto;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
@@ -59,26 +68,30 @@
 </head>
 <body>
 
-<article id="work">
-    <h2 class="major">عملائنا</h2>
-    <div class="glass-container">
-        @foreach($customers as $customer)
-            <div class="service-item">
-                <h2 class="major">{{ $customer->Title }}</h2> 
-                <img src="{{ asset('logo/' . $customer->Picture) }}" alt="{{ $customer->Title }}"> 
-                <p class="arabic-text">
-                    {{ $customer->Description }} 
-                </p>
+    <div class="container mt-5">
+        <div class="header">
+            <h2>عملائنا</h2>
+        </div>
+        <article id="work">
+            <div class="glass-container">
+                @foreach($customers as $customer)
+                    <div class="service-item">
+                        <h2 class="major">{{ $customer->Title }}</h2> 
+                        <img src="{{ asset('logo/' . $customer->Picture) }}" alt="{{ $customer->Title }}"> 
+                        <p class="arabic-text">
+                            {{ $customer->Description }} 
+                        </p>
 
-                <a href="{{ route('customers.edit', $customer->id) }}" class="btn btn-warning">تعديل</a>
+                        <a href="{{ route('customers.edit', $customer->id) }}" class="btn btn-warning">تعديل</a>
+                    </div>
+                @endforeach
             </div>
-        @endforeach
+        </article>
     </div>
-</article>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
