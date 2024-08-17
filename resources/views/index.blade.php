@@ -399,13 +399,13 @@
         right: 20px;
         width: 60px;
         height: 60px;
-        background: #ffffff; /* خلفية الزر */
+        background: #ffffff; 
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 3px solid #FFA500; /* بوردر برتقالي */
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.3); /* ظل 3D */
+        border: 3px solid #FFA500; 
+        
         transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         z-index: 1000;
     }
@@ -416,8 +416,8 @@
     }
 
     .back-to-home:hover {
-        background: #f9f9f9; /* لون خلفية أفتح عند التحويم */
-        transform: translateY(-5px); /* رفع الزر عند التحويم */
+        background: #f9f9f9; 
+        transform: translateY(-5px); 
         box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4), -8px -8px 15px rgba(255, 255, 255, 0.5); /* زيادة تأثير الظلال */
     }
 </style>
