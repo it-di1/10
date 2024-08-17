@@ -389,43 +389,37 @@
 	</article>
 
 	<a href="#main-page" class="back-to-home">
-            <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Home">
-        </a>
-    
-	<style>
-		.back-to-home {
-			position: fixed;
-			top: 20px;
-			right: 20px;
-			width: 60px;
-			height: 60px;
-			background: rgba(255, 165, 0, 0.3); 
-			backdrop-filter: blur(10px);
-			border-radius: 50%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			transition:  0.3s ease, transform 0.3s ease;
-			z-index: 1000;
-		}
-	
-		.back-to-home img {
-			width: 30px;
-			height: 30px;
-		}
-	
-		.back-to-home:hover {
-			background: rgba(255, 165, 0, 0.6);
-			transform: scale(1.1);
-		}
-		
- 
+    <img src="{{ asset('images/webpagehome_85808.ico') }}" alt="Home">
+</a>
 
+<style>
+    .back-to-home {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 1); 
+        backdrop-filter: blur(10px);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: 0.3s ease, transform 0.3s ease;
+        z-index: 1000;
+    }
 
+    .back-to-home img {
+        width: 30px;
+        height: 30px;
+    }
 
-	</style>
-
+    .back-to-home:hover {
+        background: rgba(255, 255, 255, 0.8); 
+        transform: scale(1.1);
+    }
+</style>
 
     <script>
 		const services = document.querySelectorAll('.service');
