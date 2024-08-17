@@ -56,6 +56,11 @@
             background-color: #698ea2; 
             border-color: #698ea2;
         }
+        h2.major {
+            text-align: center; 
+            color: #ffffff; 
+            margin-bottom: 30px; 
+        }
     </style>
 </head>
 <body>
