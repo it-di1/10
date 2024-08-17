@@ -442,9 +442,9 @@ input[type="reset"]:hover {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     color: white;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     margin: 0 5px; 
   }
   
