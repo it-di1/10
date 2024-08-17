@@ -34,8 +34,8 @@
         }
 
         .btn-pink {
-            background-color: #698ea2; 
-            border-color: #698ea2;
+            background-color: #e4a576; 
+            border-color: #e4a576;
             color: white;
         }
 
