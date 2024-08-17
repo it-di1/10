@@ -23,7 +23,7 @@
 
         .form-group label {
             font-weight: bold;
-            color: #152935;
+            color: #152935; 
         }
 
         .form-control {
@@ -62,45 +62,56 @@
             color: #ffffff; 
         }
 
-        form {
+        .form-container {
             background-color: #ffffff; 
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
             padding: 20px;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+        }
+
+        .btn-container button {
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container mt-5">
-        <h1>تعديل العميل</h1>
+        <div class="form-container">
+            <h1>تعديل العميل</h1>
 
-        <form action="/customers/{{ $customer->id }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            @method('PUT')
+            <form action="/customers/{{ $customer->id }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                @method('PUT')
 
-            <div class="form-group">
-                <label for="Title">العنوان:</label>
-                <input type="text" name="Title" id="Title" class="form-control" value="{{ old('Title', $customer->Title) }}" required>
-            </div>
+                <div class="form-group">
+                    <label for="Title">العنوان:</label>
+                    <input type="text" name="Title" id="Title" class="form-control" value="{{ old('Title', $customer->Title) }}" required>
+                </div>
 
-            <div class="form-group">
-                <label for="Description">الوصف:</label>
-                <textarea name="Description" id="Description" class="form-control" required>{{ old('Description', $customer->Description) }}</textarea>
-            </div>
+                <div class="form-group">
+                    <label for="Description">الوصف:</label>
+                    <textarea name="Description" id="Description" class="form-control" required>{{ old('Description', $customer->Description) }}</textarea>
+                </div>
 
-            <div class="form-group">
-                <label for="Picture">الصورة (اختياري):</label>
-                <input type="file" name="Picture" id="Picture" class="form-control">
-            </div>
+                <div class="form-group">
+                    <label for="Picture">الصورة (اختياري):</label>
+                    <input type="file" name="Picture" id="Picture" class="form-control">
+                </div>
 
-            <button type="submit" class="btn btn-primary">تحديث</button>
-        </form>
-
-        <form action="/customers/{{ $customer->id }}" method="POST" style="display: inline;">
-            @csrf
-            @method('DELETE')
-            <button type="submit" class="btn btn-danger">حذف</button>
-        </form>
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-primary">تحديث</button>
+                    <form action="/customers/{{ $customer->id }}" method="POST" style="display: inline;">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">حذف</button>
+                    </form>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
