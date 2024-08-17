@@ -393,20 +393,19 @@
 </a>
 
 <style>
-     .back-to-home {
+   .back-to-home {
         position: fixed;
         top: 20px;
         right: 20px;
         width: 60px;
         height: 60px;
-        background: linear-gradient(145deg, #f9f9f9, #e6e6e6); 
-        backdrop-filter: blur(10px);
+        background: #ffffff; /* خلفية بيضاء */
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.8); 
-        border: 3px solid rgba(255, 165, 0, 1); 
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), -3px -3px 6px rgba(255, 255, 255, 0.7); /* ظل 3D */
+        border: 3px solid rgba(255, 165, 0, 1); /* بوردر برتقالي */
         transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         z-index: 1000;
     }
@@ -417,9 +416,10 @@
     }
 
     .back-to-home:hover {
-        background: linear-gradient(145deg, #ffffff, #f1f1f1); 
-        transform: scale(1.1);
-        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.9); }
+        background: #f8f8f8; /* لون خلفية أفتح عند التحويم */
+        transform: translateY(-5px); /* رفع الزر عند التحويم */
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.9); /* زيادة تأثير الظلال */
+    }
 </style>
 
     <script>
