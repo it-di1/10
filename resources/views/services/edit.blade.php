@@ -8,7 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f0f4f8; /* Light background color */
+            background-color: #f0f4f8; 
             font-family: 'Tajawal', sans-serif;
             direction: rtl;
             text-align: right;
@@ -19,54 +19,53 @@
         }
 
         h1 {
-            color: #152935; /* Dark color for heading */
+            color: #152935; 
         }
 
         .form-group label {
             font-weight: bold;
-            color: #152935; /* Dark color for labels */
-        }
+            color: #152935; }
 
         .form-control {
-            border-color: #e4a576; /* Lighter border color for input fields */
-            border-radius: 8px; /* Rounded corners */
+            border-color: #e4a576; 
+            border-radius: 8px; 
         }
 
         .form-control:focus {
-            border-color: #698ea2; /* Focus border color */
-            box-shadow: 0 0 0 0.2rem rgba(105, 142, 162, 0.25); /* Subtle focus shadow */
+            border-color: #698ea2; 
+            box-shadow: 0 0 0 0.2rem rgba(105, 142, 162, 0.25); 
         }
 
         .btn-primary {
-            background-color: #698ea2; /* Button background color */
+            background-color: #698ea2;
             border-color: #698ea2;
-            color: white; /* Text color on button */
-            border-radius: 8px; /* Rounded corners */
+            color: white; 
+            border-radius: 8px; 
         }
 
         .btn-primary:hover {
-            background-color: #152935; /* Darker color on hover */
+            background-color: #152935; 
             border-color: #152935;
-            color: #ffffff; /* White text color on hover */
+            color: #ffffff; 
         }
 
         .btn-danger {
-            background-color: #e4a576; /* Delete button background color */
+            background-color: #e4a576; 
             border-color: #e4a576;
-            color: white; /* Text color on button */
-            border-radius: 8px; /* Rounded corners */
+            color: white; 
+            border-radius: 8px; 
         }
 
         .btn-danger:hover {
-            background-color: #152935; /* Darker color on hover */
+            background-color: #152935; 
             border-color: #152935;
-            color: #ffffff; /* White text color on hover */
+            color: #ffffff; 
         }
 
         form {
-            background-color: #ffffff; /* White background for the form */
-            border-radius: 12px; /* Rounded corners */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            background-color: #ffffff; 
+            border-radius: 12px; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
             padding: 20px;
         }
     </style>
