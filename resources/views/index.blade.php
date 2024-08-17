@@ -19,6 +19,7 @@
                 <li><a href="#work" onclick="showContent('work')">عملائنا </a></li>
                 <li><a href="#services" onclick="showContent('about')">خدماتنا</a></li>
                 <li><a href="#about" onclick="showContent('services')">من نحن</a></li>
+				
             </ul>
         </nav>
 </div>
@@ -331,12 +332,13 @@
 		
 
 			<div id="contact">
+				<!-- 
 			<div class="button-container">
     <a href="{{ url('/input') }}">
         <button>للتواصل اضغط هنا</button>
     </a>
-</div> 
-        <style>
+</div>  --> 
+        <!-- <style>
 
 .button-container {
     text-align: center;
@@ -368,7 +370,7 @@
     background-color: #152935; 
     transform: scale(1.05);
 }
-
+ -->
 
 		</style>
 			<div class="social">
@@ -378,6 +380,7 @@
 				<a href="https://snapchat.com/t/mh05HGb6" target="_blank"><i class='bx bxl-snapchat' ></i></a>
 				<a href="https://tiktok.com/@panorama_alqassim" target="_blank"><i class='bx bxl-tiktok'></i> </a>
 				<a href="https://instagram.com/palqassim/" target="_blank"> <i class='bx bxl-instagram'></i></a>
+				<a href="/data" target="_blank"> <i class='bx bxs-envelope'></i></a>
 			</div>
 		</article> 
 	
