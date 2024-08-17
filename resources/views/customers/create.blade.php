@@ -9,6 +9,8 @@
         body {
             background-color: #f0f0f0; 
             font-family: 'Tajawal', sans-serif; 
+            direction: rtl;
+            text-align: right;
         }
 
         .form-container {
