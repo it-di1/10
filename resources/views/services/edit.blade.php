@@ -6,14 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تعديل الخدمة</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8; /* Light background color */
+            font-family: 'Tajawal', sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #152935; /* Dark color for heading */
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #152935; /* Dark color for labels */
+        }
+
+        .form-control {
+            border-color: #e4a576; /* Lighter border color for input fields */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .form-control:focus {
+            border-color: #698ea2; /* Focus border color */
+            box-shadow: 0 0 0 0.2rem rgba(105, 142, 162, 0.25); /* Subtle focus shadow */
+        }
+
+        .btn-primary {
+            background-color: #698ea2; /* Button background color */
+            border-color: #698ea2;
+            color: white; /* Text color on button */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .btn-primary:hover {
+            background-color: #152935; /* Darker color on hover */
+            border-color: #152935;
+            color: #ffffff; /* White text color on hover */
+        }
+
+        .btn-danger {
+            background-color: #e4a576; /* Delete button background color */
+            border-color: #e4a576;
+            color: white; /* Text color on button */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .btn-danger:hover {
+            background-color: #152935; /* Darker color on hover */
+            border-color: #152935;
+            color: #ffffff; /* White text color on hover */
+        }
+
+        form {
+            background-color: #ffffff; /* White background for the form */
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container">
         <h1>تعديل الخدمة</h1>
 
         <form action="/services/{{ $service->id }}" method="POST" enctype="multipart/form-data">
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-            <input type="hidden" name="_method" value="PUT">
+            @csrf
+            @method('PUT')
 
             <div class="form-group">
                 <label for="Title">العنوان:</label>
@@ -32,12 +96,11 @@
 
             <button type="submit" class="btn btn-primary">تحديث</button>
 
-                <form action="/services/{{ $service->id }}" method="POST" style="display: inline;">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    <input type="hidden" name="_method" value="DELETE">
-                    <button type="submit" class="btn btn-danger">حذف</button>
-                </form>
-           
+            <form action="/services/{{ $service->id }}" method="POST" style="display: inline;">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger">حذف</button>
+            </form>
         </form>
     </div>
 
