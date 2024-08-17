@@ -7,7 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa; 
+            background-color: #698ea2; 
             font-family: 'Tajawal', sans-serif;
             direction: rtl;
             text-align: right;
