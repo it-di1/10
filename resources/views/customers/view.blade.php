@@ -7,33 +7,33 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #698ea2; /* خلفية الصفحة */
+            background-color: #698ea2; 
             font-family: 'Tajawal', sans-serif;
             direction: rtl;
             text-align: right;
-            color: white; /* لون النصوص */
+            color: white; 
         }
 
         .glass-container {
             margin: 50px auto;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.2); /* خلفية زجاجية مع لون رمادي شفاف */
+            background: rgba(255, 255, 255, 0.2); 
             backdrop-filter: blur(10px);
             border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* ظل أقوى لتأثير أفضل */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
             max-width: 1200px;
         }
 
         .service-item {
             padding: 20px;
             margin-bottom: 20px;
-            background: rgba(255, 255, 255, 0.3); /* خلفية زجاجية أكثر شفافية */
+            background: rgba(255, 255, 255, 0.3); 
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         .service-item h2.major {
-            color: #ffffff; /* لون العنوان */
+            color: #ffffff; 
         }
 
         .service-item img {
@@ -42,32 +42,19 @@
         }
 
         .service-item p.arabic-text {
-            color: #e4e4e4; /* لون النصوص داخل العناصر */
+            color: #e4e4e4; 
         }
 
         .btn-warning {
-            background-color: #152935; /* لون زر التعديل */
+            background-color: #152935; 
             border-color: #152935;
             color: white;
             border-radius: 8px;
         }
 
         .btn-warning:hover {
-            background-color: #698ea2; /* لون الخلفية عند التحويم */
+            background-color: #698ea2; 
             border-color: #698ea2;
-        }
-
-        /* محاذاة العنوان في المنتصف */
-        #work {
-            text-align: center; /* محاذاة النصوص في المنتصف */
-            color: #ffffff; /* لون النص */
-        }
-
-        #work h2.major {
-            display: inline-block; /* جعل العنوان عنصرًا بالعرض التلقائي */
-            padding: 10px 20px; /* إضافة بعض الحشو */
-            background: #152935; /* لون خلفية العنوان */
-            border-radius: 8px; /* حدود دائرية */
         }
     </style>
 </head>
