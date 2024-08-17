@@ -56,6 +56,19 @@
             background-color: #698ea2; /* لون الخلفية عند التحويم */
             border-color: #698ea2;
         }
+
+        /* محاذاة العنوان في المنتصف */
+        #work {
+            text-align: center; /* محاذاة النصوص في المنتصف */
+            color: #ffffff; /* لون النص */
+        }
+
+        #work h2.major {
+            display: inline-block; /* جعل العنوان عنصرًا بالعرض التلقائي */
+            padding: 10px 20px; /* إضافة بعض الحشو */
+            background: #152935; /* لون خلفية العنوان */
+            border-radius: 8px; /* حدود دائرية */
+        }
     </style>
 </head>
 <body>
