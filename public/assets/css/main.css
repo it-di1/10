@@ -355,7 +355,7 @@ form {
 /* Stylish Buttons */
 input[type="submit"].primary,
 input[type="reset"] {
-    background-color: #dd4b39;
+    background-color: #152935;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -367,7 +367,7 @@ input[type="reset"] {
 
 input[type="submit"].primary:hover,
 input[type="reset"]:hover {
-    background-color: #c43a28;
+    background-color: #152935;
 }
 
 
