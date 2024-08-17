@@ -62,7 +62,7 @@
             width: 100%;
             padding: 10px;
             border-radius: 5px;
-            border: none;
+            border: 1px solid rgba(255, 255, 255, 0.3); /* إضافة حد خفيف للحقول */
             background: rgba(255, 255, 255, 0.2); /* خلفية زجاجية للحقل */
             color: #ffffff; /* لون النصوص داخل الحقول */
         }
